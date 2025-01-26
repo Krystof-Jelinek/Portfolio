@@ -292,12 +292,12 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, +65%) scale(1.5); /* Center and zoom */
+    transform: translate(-50%, +190%) scale(1.5); /* Center and zoom */
     z-index: 100;
 }
 
 .portfolio-item.open:hover {
-    transform: translate(-50%, +65%) scale(1.5); /* Keep it the same as when opened */
+    transform: translate(-50%, +190%) scale(1.5); /* Keep it the same as when opened */
     box-shadow: 0 10px 30px rgba(0, 171, 228, 0.5); /* Keep shadow on hover */
     background-color: #FFFFFF;
 }
