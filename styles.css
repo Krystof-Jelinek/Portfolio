@@ -1,4 +1,8 @@
 /* General Reset */
+html{
+    scroll-behavior: smooth;
+}
+
 body, h1, h2, p, ul, a {
     margin: 0;
     padding: 0;
@@ -13,30 +17,38 @@ body {
     color: #333; /* Darker text for contrast */
 }
 
+/*----------------------------------------------Navbar----------------------------------------------------------*/
+
 /* Navbar */
 .navbar {
-    background: #121c1f;
+    background: #1f3035;
     color: #FFFFFF; /* White text */
-    padding: 1rem 0;
+    padding: 0.8rem 2rem; /* Reduced padding for a thinner navbar */
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Space between name and links */
+    align-items: center; /* Vertically align items */
 }
 
+/* Logo */
 .navbar .logo {
-    float: left;
+    font-size: 1.6rem; /* Adjust logo size */
 }
 
+/* Navigation Links */
 .nav-links {
     list-style: none;
-    float: right;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem; /* Increased gap between links */
 }
 
 .nav-links a {
     color: #FFFFFF; /* White links */
     font-weight: bold;
+    font-size: 1.1rem; /* Adjust font size for better fit */
+    padding: 0.5rem 1rem; /* Padding for better spacing around links */
     transition: color 0.3s ease;
 }
 
@@ -44,14 +56,51 @@ body {
     color: #E9F1FA; /* Light blue hover effect */
 }
 
+/* Optional: Mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links vertically on small screens */
+        gap: 1rem; /* Adjust gap between links */
+    }
+
+    .nav-links a {
+        font-size: 1.3rem; /* Increase font size for mobile */
+    }
+}
+
+
+
 /*----------------------------------------------Hero----------------------------------------------------------*/
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(90deg, #00ABE4, #E9F1FA); /* Bright to light blue */
+    background: linear-gradient(90deg, #00ABE4, #d9e9fc); /* Initial gradient */
+    background-size: 200% 100%; /* Makes the gradient large enough to move */
+    animation: gradientFlow 8s ease infinite; /* Apply the animation */
     color: #FFFFFF; /* White text */
     text-align: center;
     padding: 3rem 1rem;
+}
+
+/* Define the animation */
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%; /* Start from the left */
+    }
+    50% {
+        background-position: 100% 50%; /* Move to the right */
+    }
+    100% {
+        background-position: 0% 50%; /* Move back to the left */
+    }
+}
+
+.hero h2{
+    font-size: 50px;
 }
 
 .cta-button {
@@ -59,6 +108,7 @@ body {
     color: #00ABE4; /* Bright blue text */
     padding: 0.5rem 1rem;
     border-radius: 5px;
+    margin-top: 0.75rem;
     font-weight: bold;
     display: inline-block;
     transition: 0.3s ease, color 0.3s ease;
@@ -77,6 +127,7 @@ body {
     padding: 2rem 0;
     text-align: center;
     color: #333; /* Dark text for readability */
+    scroll-margin-top: 65px; /* Adjust based on your navbar height */
 }
 
 .about h2 {
@@ -89,6 +140,7 @@ body {
 .portfolio {
     background: #E9F1FA;
     padding: 3rem 1.5rem; /* Increased padding for better spacing */
+    scroll-margin-top: 40px; /* Adjust based on your navbar height */
 }
 
 .portfolio h2 {
@@ -145,12 +197,12 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -15%) scale(1.5); /* Center and zoom */
+    transform: translate(-50%, +65%) scale(1.5); /* Center and zoom */
     z-index: 100;
 }
 
 .portfolio-item.open:hover {
-    transform: translate(-50%, -15%) scale(1.5); /* Keep it the same as when opened */
+    transform: translate(-50%, +65%) scale(1.5); /* Keep it the same as when opened */
     box-shadow: 0 10px 30px rgba(0, 171, 228, 0.5); /* Keep shadow on hover */
     background-color: #FFFFFF;
 }
@@ -208,6 +260,60 @@ h3 {
 /* Optional: Focused state */
 .portfolio-item:focus-within {
     box-shadow: 0 10px 30px rgba(0, 171, 228, 0.4); /* Stronger shadow on focus */
+}
+
+/*----------------------------------------------CV----------------------------------------------------------*/
+
+.cv h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase; /* Makes the header look bolder */
+    letter-spacing: 2px; /* Slightly spaced letters for a modern look */
+}
+
+.cv-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.cv-btn button {
+    padding: 0.7rem 3rem;
+    border: none;
+    width: 200px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+}
+
+.cv-btn.download button {
+    background-color: #28a745; /* Green background */
+    color: white;
+}
+
+/* Hover effect for the Download Button */
+.cv-btn.download button:hover {
+    background-color: #218838; /* Darker green for hover */
+    transform: translateY(-2px); /* Slight movement on hover */
+}
+
+/* Styling for View Button (Blue) */
+.cv-btn.view button {
+    background-color: #00ABE4; /* Original Blue color */
+    color: white;
+}
+
+/* Hover effect for the View Button */
+.cv-btn.view button:hover {
+    background-color: #007ba7; /* Darker blue for hover */
+    transform: translateY(-2px); /* Slight movement on hover */
 }
 
 /*----------------------------------------------Contacts----------------------------------------------------------*/

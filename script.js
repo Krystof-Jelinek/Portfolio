@@ -1,5 +1,4 @@
 
-
 // Select all portfolio items
 const portfolioItems = document.querySelectorAll('.portfolio-item');
 let activeItem = null;  // To keep track of the currently active (expanded) project

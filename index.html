@@ -7,18 +7,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="container">
-            <h1 class="logo">Kryštof Jelínek</h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="navbar">
+        <div class="logo">Kryštof Jelínek</div>
+        <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
 
     <section class="hero">
         <div class="container">
@@ -101,6 +98,22 @@
                     </td>
                 </tr>
             </table>
+        </div>
+    </section>
+
+    <section id="cv" class="cv">
+        <div class="container">
+            <h2>CV</h2>
+            <div class="cv-buttons">
+                <!-- View Button (opens the CV in a new tab) -->
+                <a href="Krystof-Jelinek-zivotopis.pdf" class="cv-btn view" target="_blank">
+                    <button>View</button>
+                </a>
+                <!-- Download Button -->
+                <a href="Krystof-Jelinek-zivotopis.pdf" class="cv-btn download" download>
+                    <button>Download</button>
+                </a>
+            </div>
         </div>
     </section>
     
