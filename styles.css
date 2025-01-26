@@ -19,7 +19,7 @@ body {
 
 /*----------------------------------------------Navbar----------------------------------------------------------*/
 
-/* Navbar */
+
 .navbar {
     background: #1f3035;
     color: #FFFFFF; /* White text */
@@ -28,22 +28,31 @@ body {
     top: 0;
     z-index: 1000;
     display: flex;
-    justify-content: space-between; /* Space between name and links */
     align-items: center; /* Vertically align items */
 }
 
-/* Logo */
+/* Logo aligned to the left */
 .navbar .logo {
     font-size: 1.6rem; /* Adjust logo size */
+    margin-right: auto; /* Push the logo to the far left */
 }
 
-/* Navigation Links */
+/* Navigation menu centered */
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 1.5rem; /* Increased gap between links */
+    gap: 1.5rem; /* Gap between links */
+    margin: 0 auto; /* Center the nav links */
 }
 
+/* Language switch aligned to the right */
+.language-switch {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: auto; /* Push the language switch to the far right */
+}
+
+/* Navigation Links */
 .nav-links a {
     color: #FFFFFF; /* White links */
     font-weight: bold;
@@ -56,19 +65,49 @@ body {
     color: #E9F1FA; /* Light blue hover effect */
 }
 
+.flag-button {
+    width: 36px; /* Set the button size */
+    height: 24px; /* Match the aspect ratio of the flag */
+    padding: 0; /* Remove padding */
+    border: none;
+    background: none; /* No default background */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#lang-en {
+    margin-right: 0.5rem;
+}
+
+
+.flag-button img {
+    width: 100%; /* Make the image fill the button */
+    height: 100%; /* Keep aspect ratio */
+    object-fit: cover; /* Ensure the image scales proportionally */
+    border-radius: 4px; /* Optional: Rounded corners for a polished look */
+}
+
+
 /* Optional: Mobile responsiveness */
 @media (max-width: 768px) {
     .navbar {
+        flex-wrap: wrap; /* Allow items to wrap on small screens */
         padding: 1rem; /* Adjust padding for smaller screens */
     }
 
     .nav-links {
         flex-direction: column; /* Stack links vertically on small screens */
         gap: 1rem; /* Adjust gap between links */
+        margin: 1rem auto; /* Center the menu on smaller screens */
     }
 
     .nav-links a {
         font-size: 1.3rem; /* Increase font size for mobile */
+    }
+
+    .language-switch {
+        margin-left: 0; /* Reset alignment for smaller screens */
+        justify-content: center; /* Center language switch */
     }
 }
 
@@ -123,16 +162,72 @@ body {
 
 /* About Section */
 .about {
-    background: #E9F1FA; /* White background */
-    padding: 2rem 0;
-    text-align: center;
-    color: #333; /* Dark text for readability */
-    scroll-margin-top: 65px; /* Adjust based on your navbar height */
+    display: flex;
+    justify-content: center; /* Horizontally center the section */
+    align-items: center; /* Vertically center the section */
+    padding: 0 1rem; /* Remove top/bottom padding */
+    background: #E9F1FA;
+    min-height: 40vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+/* Container for the content */
+.about .container {
+    display: flex;
+    align-items: center; /* Vertically center the content inside the container */
+    justify-content: center; /* Horizontally center the content */
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px; /* Optional: Set a max width for better control */
+}
+
+.about-content {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    gap: 2rem; /* Space between text and image */
+}
+
+.about-text {
+    flex: 1; /* Allow the text to take up the remaining space */
+    max-width: 100%; /* Adjust this width as needed */
+    font-size: 1.33rem;
 }
 
 .about h2 {
     font-size: 2rem;
+    color: #333;
 }
+
+.about-image {
+    flex: 0 0 auto; /* Prevent the image from growing */
+    width: 150px; /* Set fixed width */
+    height: 150px; /* Set fixed height */
+    border-radius: 50%; /* Make the image circular */
+    overflow: hidden; /* Ensure the image stays within the circular boundary */
+    display: flex; /* Flexbox to center the image */
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the container without distortion */
+}
+
+/* Optional: For smaller screens, stack the image and text */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Stack text and image */
+        text-align: center;
+    }
+
+    .about-image {
+        max-width: 60%;
+    }
+}
+
+
 
 /*----------------------------------------------Portfolio----------------------------------------------------------*/
 
@@ -379,7 +474,7 @@ h3 {
 .contact-card h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    color: #00ABE4; /* Bright blue headings */
+    color: #333; /* Bright blue headings */
 }
 
 .contact-link {
@@ -425,4 +520,24 @@ h3 {
     text-align: center; /* Center the text */
 }
 
+/* Specific hover effects for each contact card */
+.contact-card[href^="mailto"] { /* Email card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-card[href^="mailto"]:hover {
+    background-color: rgba(255, 0, 0, 0.1); /* Light red background */
+}
 
+.contact-card[href^="tel"] { /* Phone card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-card[href^="tel"]:hover {
+    background-color: rgba(0, 255, 0, 0.1); /* Light green background */
+}
+
+.contact-card[href*="linkedin"] { /* LinkedIn card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-card[href*="linkedin"]:hover {
+    background-color: rgba(0, 0, 255, 0.1); /* Light blue background */
+}
