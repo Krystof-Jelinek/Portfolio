@@ -3,10 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Krystof Jelinek</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my first HTML page.</p>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Kryštof Jelínek</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to My Portfolio</h2>
+            <p>I’m a software developer passionate about creating innovative solutions.</p>
+            <a href="#contact" class="cta-button">Let’s Connect</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                My name is [Your Name], and I’m a software developer specializing in [your specialization]. 
+                I have experience in [skills]. I’m always looking for new challenges and opportunities.
+            </p>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <h3>Project 1</h3>
+                    <p>Short description of your project.</p>
+                </div>
+                <div class="portfolio-item">
+                    <h3>Project 2</h3>
+                    <p>Short description of your project.</p>
+                </div>
+                <div class="portfolio-item">
+                    <h3>Project 3</h3>
+                    <p>Short description of your project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <!-- New Wrapper for Contact Cards -->
+            <div class="contact-wrapper">
+                <h2>Contact Me</h2>
+                <p>Feel free to get in touch with me using any of these channels</p>
+                <div class="contact-grid">
+                    <!-- Email -->
+                    <a href="mailto:krys.jelinek@seznam.cz" class="contact-card">
+                        <img src="email-icon.png" alt="Email" class="contact-icon" />
+                        <h3>Email</h3>
+                        <p>krys.jelinek@seznam.cz</p>
+                    </a>
+                    <!-- Phone -->
+                    <a href="tel:+123456789" class="contact-card">
+                        <img src="phone-icon.png" alt="Phone" class="contact-icon" />
+                        <h3>Phone</h3>
+                        <p>+123 456 789</p>
+                    </a>
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/your-profile/" target="_blank" class="contact-card">
+                        <img src="linkedin-icon.png" alt="LinkedIn" class="contact-icon" />
+                        <h3>LinkedIn</h3>
+                        <p>Visit my profile</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    
+    
+    
+
+    <script src="script.js"></script>
 </body>
 </html>
