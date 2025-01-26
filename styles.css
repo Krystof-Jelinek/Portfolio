@@ -194,6 +194,7 @@ body {
 }
 
 .about h2 {
+    margin-bottom: 1rem;
     font-size: 2rem;
     color: #333;
 }
@@ -405,6 +406,11 @@ h3 {
     color: white;
 }
 
+.cv p{
+    text-align: center;
+    font-size: 20px;
+}
+
 /* Hover effect for the View Button */
 .cv-btn.view button:hover {
     background-color: #007ba7; /* Darker blue for hover */
@@ -540,4 +546,29 @@ h3 {
 }
 .contact-card[href*="linkedin"]:hover {
     background-color: rgba(0, 0, 255, 0.1); /* Light blue background */
+}
+
+/*----------------------------------------------Copyright----------------------------------------------------------*/
+
+/* Copyright Styling */
+.copyright {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.copyright hr {
+    border: 0;
+    border-top: 1px solid #444;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.copyright p {
+    font-size: 1.1rem;
+    margin: 0;
+    text-align: center;
 }
