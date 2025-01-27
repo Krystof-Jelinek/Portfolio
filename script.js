@@ -44,7 +44,7 @@ const translations = {
         intro: "Feel free to get in touch with me using any of these channels",
         email: "Email",
         phone: "Phone",
-        linkedin: "Visit my profile"
+        linkedin: "LinkedIn"
     },
     cz: {
         about: "O mně",
@@ -54,7 +54,7 @@ const translations = {
         intro: "Neváhejte mě kontaktovat pomocí těchto kanálů",
         email: "E-mail",
         phone: "Telefon",
-        linkedin: "Navštivte můj profil"
+        linkedin: "LinkedIn"
     }
 };
 
