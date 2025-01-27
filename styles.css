@@ -268,7 +268,8 @@ body {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     cursor: pointer;
-    max-height: 400px;
+    max-height: 500px;
+    max-width: 100px;
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -293,18 +294,62 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, +190%) scale(1.5); /* Center and zoom */
+    transform: translate(-50%, +10%) scale(1.5); /* Center and zoom */
     z-index: 100;
+    max-width: 700px;
+    max-height: 1000px;
 }
 
 .portfolio-item.open:hover {
-    transform: translate(-50%, +190%) scale(1.5); /* Keep it the same as when opened */
+    transform: translate(-50%, +10%) scale(1.5); /* Keep it the same as when opened */
     box-shadow: 0 10px 30px rgba(0, 171, 228, 0.5); /* Keep shadow on hover */
     background-color: #FFFFFF;
 }
 
 .portfolio-item.open .portfolio-item-content {
     transform: scale(0.7);
+}
+
+.portfolio-item-content .short-description {
+    transition: opacity 0.3s ease; /* Smooth transition for hiding */
+}
+
+.portfolio-item.open .short-description {
+    opacity: 0; /* Fade out effect */
+    pointer-events: none; /* Disable interaction while hidden */
+    height: 0; /* Ensure it takes no vertical space */
+    overflow: hidden; /* Prevent content from spilling out */
+    margin: 0; /* Remove any margin space */
+    display: none; /* Completely hide it */
+}
+
+.short-description{
+    text-align: left;
+    margin-left: 0.5rem;
+}
+
+.short-description-points {
+    display: flex; /* Arrange list items in a row */
+    gap: 10px; /* Add spacing between items */
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.short-description-points li {
+    position: relative;
+    padding-left: 15px; /* Space for custom dot */
+    color: #666; /* Blue color for text */
+    font-size: 0.9em; /* Adjust size for a clean look */
+}
+
+.short-description-points li::before {
+    content: "•"; /* Custom dot */
+    position: absolute;
+    left: 0; /* Position the dot on the left */
+    color: #666; /* Blue color for the dot */
+    font-size: 1.2em; /* Slightly larger dot */
+    line-height: 1; /* Center align the dot */
 }
 
 /* Hover Effect on Item */
@@ -346,6 +391,8 @@ h3 {
 
 .expanded-content p {
     color: #444;
+    text-align: left;
+    margin-bottom: 1.5em;
 }
 
 /* Optional: Smooth transition for expanding content */
@@ -356,6 +403,24 @@ h3 {
 /* Optional: Focused state */
 .portfolio-item:focus-within {
     box-shadow: 0 10px 30px rgba(0, 171, 228, 0.4); /* Stronger shadow on focus */
+}
+
+.app-example a{
+    color: #00aaff; /* Light blue color */
+    text-decoration: none; /* Optional: Removes underline */
+}
+
+.app-example a:hover {
+    color: #0077cc; /* Darker blue on hover */
+}
+
+.expanded-content a{
+    color: #00aaff; /* Light blue color */
+    text-decoration: none; /* Optional: Removes underline */
+}
+
+.expanded-content a:hover {
+    color: #0077cc; /* Darker blue on hover */
 }
 
 /*----------------------------------------------CV----------------------------------------------------------*/
