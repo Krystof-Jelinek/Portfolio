@@ -17,6 +17,13 @@ body {
     color: #333; /* Darker text for contrast */
 }
 
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+
 /*----------------------------------------------Navbar----------------------------------------------------------*/
 
 
@@ -88,28 +95,24 @@ body {
 }
 
 
-/* Optional: Mobile responsiveness */
 @media (max-width: 768px) {
     .navbar {
-        flex-wrap: wrap; /* Allow items to wrap on small screens */
-        padding: 1rem; /* Adjust padding for smaller screens */
+        padding: 0.8rem; /* Maintain consistent padding across devices */
     }
 
     .nav-links {
-        flex-direction: column; /* Stack links vertically on small screens */
-        gap: 1rem; /* Adjust gap between links */
-        margin: 1rem auto; /* Center the menu on smaller screens */
+        gap: 0.5rem; /* Reduce gap between links for small screens */
     }
 
     .nav-links a {
-        font-size: 1.3rem; /* Increase font size for mobile */
+        font-size: 1rem; /* Slightly smaller font for better spacing */
     }
 
     .language-switch {
-        margin-left: 0; /* Reset alignment for smaller screens */
-        justify-content: center; /* Center language switch */
+        margin-top: 1rem; /* Add space below the menu for better layout */
     }
 }
+
 
 
 
@@ -158,6 +161,22 @@ body {
     color: #FFFFFF; /* White text */
 }
 
+@media (max-width: 768px) {
+    .hero {
+        padding: 2rem 1rem; /* Reduce padding for smaller screens */
+    }
+
+    .hero h2 {
+        font-size: 36px; /* Adjust font size for better fit */
+    }
+
+    .cta-button {
+        padding: 0.5rem 0.8rem; /* Slightly smaller button for phones */
+        font-size: 0.9rem; /* Adjust font size for readability */
+    }
+}
+
+
 /*----------------------------------------------About----------------------------------------------------------*/
 
 /* About Section */
@@ -169,6 +188,7 @@ body {
     background: #E9F1FA;
     min-height: 40vh; /* Full height of the viewport */
     margin: 0; /* Remove default margin */
+    scroll-margin-top: 40px
 }
 
 /* Container for the content */
@@ -218,15 +238,24 @@ body {
 
 /* Optional: For smaller screens, stack the image and text */
 @media (max-width: 768px) {
-    .about-content {
-        flex-direction: column; /* Stack text and image */
-        text-align: center;
+    .about {
+        padding: 2rem 1rem; /* Add vertical padding for spacing */
+    }
+
+    .about h2 {
+        font-size: 1.5rem; /* Reduce heading size for smaller screens */
+    }
+
+    .about-text {
+        font-size: 1rem; /* Adjust text size for readability */
     }
 
     .about-image {
-        max-width: 60%;
+        width: 120px; /* Reduce image size for smaller screens */
+        height: 120px;
     }
 }
+
 
 
 
@@ -424,7 +453,78 @@ h3 {
     color: #0077cc; /* Darker blue on hover */
 }
 
+/* Responsive Design for Phones */
+@media (max-width: 768px) {
+    .portfolio {
+        padding: 2rem 1rem; /* Adjusted padding for smaller screens */
+    }
+
+    .portfolio h2 {
+        font-size: 1.8rem; /* Slightly smaller font for better scaling */
+    }
+
+    .portfolio-table {
+        border-spacing: 0.5rem; /* Reduce spacing between cells */
+    }
+
+    .portfolio-item {
+        padding: 1rem; /* Less padding for smaller space */
+        transform: none; /* Remove hover lift effect for smaller screens */
+        box-shadow: 0 4px 10px rgba(0, 171, 228, 0.1); /* Softer shadow */
+        max-width: 100%; /* Use full width of the container */
+        max-height: 400px; /* Adjust maximum height */
+        display: block; /* Stack the items vertically */
+        margin-bottom: 1rem; /* Add space between items */
+    }
+
+    .portfolio-item.open {
+        transform: none; /* Disable scaling on smaller devices */
+        max-width: calc(100% - 2rem); /* Ensure it doesn't overflow horizontally */
+        max-height: 500px; /* Adjust height for better viewing */
+        top: 10%; /* Prevent overflowing off the screen */
+        left: 50%;
+        transform: translateX(-50%); /* Center horizontally only */
+        overflow: auto;
+    }
+
+    .portfolio-item:hover {
+        transform: none; /* Disable hover effects */
+        box-shadow: 0 8px 20px rgba(0, 171, 228, 0.2); /* Softer shadow */
+    }
+
+    .portfolio-item p {
+        max-height: 75px; /* Smaller default collapsed height */
+    }
+
+    .portfolio-item.open p {
+        max-height: 300px; /* Expanded height for better scrolling */
+    }
+
+    .short-description {
+        font-size: 0.9rem; /* Adjusted font size for readability */
+    }
+
+    .short-description-points {
+        flex-direction: column; /* Stack points vertically */
+        gap: 5px; /* Reduce spacing between points */
+    }
+
+    h3 {
+        font-size: 1.4rem; /* Slightly smaller headings */
+    }
+
+    .expanded-content {
+        font-size: 1rem; /* Adjust font size */
+    }
+}
+
+
+
 /*----------------------------------------------CV----------------------------------------------------------*/
+
+.cv {
+    scroll-margin-top: 40px
+}
 
 .cv h2 {
     text-align: center;
@@ -483,6 +583,43 @@ h3 {
     transform: translateY(-2px); /* Slight movement on hover */
 }
 
+/* Responsive Design for Phones */
+@media (max-width: 768px) {
+    .cv {
+        padding: 2rem 1rem; /* Reduce padding for smaller screens */
+    }
+
+    .cv h2 {
+        font-size: 1.6rem; /* Smaller font size for better fit */
+        margin-bottom: 1rem; /* Reduce space below the header */
+        letter-spacing: 1px; /* Slightly less letter spacing */
+    }
+
+    .cv p {
+        font-size: 16px; /* Smaller text for better readability on small screens */
+        margin-bottom: 1rem;
+    }
+
+    .cv-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 1rem; /* Reduce spacing between buttons */
+        margin-top: 1.5rem;
+    }
+
+    .cv-btn button {
+        padding: 0.5rem 2rem; /* Reduce padding for smaller buttons */
+        width: 100%; /* Make buttons stretch to fit container */
+        font-size: 0.9rem; /* Smaller font size */
+        border-radius: 6px; /* Slightly smaller border radius */
+    }
+
+    .cv-btn.download button:hover,
+    .cv-btn.view button:hover {
+        transform: none; /* Disable hover movement for smaller screens */
+    }
+}
+
+
 /*----------------------------------------------Contacts----------------------------------------------------------*/
 
 /* Footer Section */
@@ -491,6 +628,7 @@ h3 {
     color: #FFFFFF; /* White text */
     padding: 3rem 1rem;
     text-align: center;
+    scroll-margin-top: 40px
 }
 
 .footer h2 {
@@ -518,13 +656,6 @@ h3 {
     text-align: center;
     display: block; /* Ensure it behaves like a block-level element */
     width: 100%;
-}
-
-/* Optional: If you want to make the cards responsive */
-@media (max-width: 768px) {
-    .contact-card {
-        width: 100%; /* Stack the cards on smaller screens */
-    }
 }
 
 .contact-card:hover {
@@ -614,6 +745,61 @@ h3 {
     background-color: rgba(0, 0, 255, 0.1); /* Light blue background */
 }
 
+/* Responsive Design for Footer Section */
+/* Responsive Design for Footer Section */
+@media (max-width: 768px) {
+    .footer {
+        padding: 2rem 1rem; /* Reduce padding for smaller screens */
+        text-align: center; /* Ensure centered alignment on small screens */
+    }
+
+    .footer h2 {
+        font-size: 1.8rem; /* Adjust font size for better fit */
+        margin-bottom: 1.5rem; /* Reduce space below the header */
+    }
+
+    .contact-wrapper {
+        padding: 2rem; /* Reduce padding inside the wrapper */
+        gap: 1.5rem; /* Decrease gap between elements */
+    }
+
+    .contact-wrapper h2 {
+        font-size: 2rem; /* Slightly smaller heading */
+    }
+
+    .contact-wrapper p {
+        font-size: 1rem; /* Smaller paragraph text */
+    }
+
+    .contact-grid {
+        flex-direction: column; /* Stack the contact cards vertically */
+        gap: 1rem; /* Reduce spacing between cards */
+    }
+
+    .contact-card {
+        padding: 1rem; /* Reduce padding inside the cards */
+        width: 90%; /* Make contact cards smaller */
+        max-width: 320px; /* Ensure cards are not too wide */
+        margin: 0 auto; /* Center the cards */
+    }
+
+    .contact-card h3 {
+        font-size: 1.3rem; /* Slightly smaller subheading */
+    }
+
+    .contact-icon {
+        width: 40px; /* Further reduce icon size */
+        height: 40px; /* Further reduce icon size */
+        margin-bottom: 0.8rem; /* Adjust spacing below the icon */
+    }
+
+    .contact-link {
+        font-size: 0.95rem; /* Reduce font size of links */
+    }
+}
+
+
+
 /*----------------------------------------------Copyright----------------------------------------------------------*/
 
 /* Copyright Styling */
@@ -637,4 +823,19 @@ h3 {
     font-size: 1.1rem;
     margin: 0;
     text-align: center;
+}
+
+/* Responsive Design for Copyright Section */
+@media (max-width: 768px) {
+    .copyright {
+        padding: 10px 0; /* Reduce padding for smaller screens */
+    }
+
+    .copyright p {
+        font-size: 1rem; /* Adjust font size for readability */
+    }
+
+    .copyright hr {
+        margin: 8px 0; /* Reduce margin for smaller screens */
+    }
 }
