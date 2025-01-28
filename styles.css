@@ -512,14 +512,15 @@ h3 {
 
     .portfolio-item.open {
         position: fixed; /* Fixed position so it takes up full screen */
-        top: 50%; /* Center vertically */
-        left: 50%; /* Center horizontally */
         transform: translate(-50%, -50%); /* Ensure it’s centered */
-        max-width: 100%; /* Adjust the max-width */
+        max-width: 90%; /* Adjust the max-width */
         max-height: 90%; /* Adjust the max-height */
         overflow: auto; /* Allow scrolling if content exceeds */
         padding: 2rem; /* Add padding around content */
         width: max-content;
+        margin-top: -50rem; /* Adjust for proper vertical alignment */
+        /*margin-bottom: auto;
+        margin-top: auto; /* Adjust for proper vertical alignment */
     }
 
     .portfolio-item:hover {
