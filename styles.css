@@ -330,7 +330,8 @@ body {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     cursor: pointer;
-    max-height: 500px;
+    max-height: none;
+    height: auto;
     max-width: 100px;
     overflow: hidden;
     position: relative;
