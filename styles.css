@@ -95,23 +95,56 @@ body {
 }
 
 
+/* Navbar for smaller screens */
 @media (max-width: 768px) {
+    /* Navbar styling for small screens */
     .navbar {
-        padding: 0.8rem; /* Maintain consistent padding across devices */
+        padding: 0.3rem; /* Even smaller padding */
+        flex-direction: column; /* Stack navbar items vertically */
+        text-align: center; /* Center the navbar content */
+        gap: 0.3rem; /* Smaller gap between the logo, links, and language switch */
+        position: static; /* Remove sticky behavior */
+        box-shadow: none; /* Remove any shadow for simplicity */
     }
 
+    /* Logo Styling */
+    .navbar .logo {
+        font-size: 1rem; /* Even smaller logo size */
+        margin-bottom: 0.3rem; /* Reduced space below the logo */
+    }
+
+    /* Navigation menu styling for smaller screens */
     .nav-links {
-        gap: 0.5rem; /* Reduce gap between links for small screens */
+        display: flex; /* Flexbox to stack links */
+        flex-direction: column; /* Stack links vertically */
+        gap: 0.3rem; /* Reduced gap between links */
+        width: 100%; /* Ensure full width for the nav links */
     }
 
-    .nav-links a {
-        font-size: 1rem; /* Slightly smaller font for better spacing */
-    }
-
+    /* Language switch on smaller screens */
     .language-switch {
-        margin-top: 1rem; /* Add space below the menu for better layout */
+        display: flex;
+        justify-content: center;
+        margin-top: 0.3rem; /* Reduced space between nav and language switch */
+        gap: 0.3rem; /* Reduced gap between language buttons */
+    }
+
+    /* Adjust individual nav links */
+    .nav-links a {
+        font-size: 0.75rem; /* Smaller font size */
+        padding: 0.3rem; /* Reduced padding around links */
+    }
+
+    /* Adjust flag button size */
+    .flag-button {
+        width: 18px; /* Smaller flag button size */
+        height: 12px; /* Adjusted aspect ratio for flags */
     }
 }
+
+
+
+
 
 
 
@@ -478,13 +511,15 @@ h3 {
     }
 
     .portfolio-item.open {
-        transform: none; /* Disable scaling on smaller devices */
-        max-width: calc(100% - 2rem); /* Ensure it doesn't overflow horizontally */
-        max-height: 500px; /* Adjust height for better viewing */
-        top: 10%; /* Prevent overflowing off the screen */
-        left: 50%;
-        transform: translateX(-50%); /* Center horizontally only */
-        overflow: auto;
+        position: fixed; /* Fixed position so it takes up full screen */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Ensure it’s centered */
+        max-width: 100%; /* Adjust the max-width */
+        max-height: 90%; /* Adjust the max-height */
+        overflow: auto; /* Allow scrolling if content exceeds */
+        padding: 2rem; /* Add padding around content */
+        width: max-content;
     }
 
     .portfolio-item:hover {
@@ -493,11 +528,14 @@ h3 {
     }
 
     .portfolio-item p {
-        max-height: 75px; /* Smaller default collapsed height */
+        max-height: none; /* Remove height limit to show full content */
+        overflow: visible; /* Ensure content is fully visible */
+        font-size: 0.9rem; /* Adjusted font size for readability */
     }
 
     .portfolio-item.open p {
-        max-height: 300px; /* Expanded height for better scrolling */
+        max-height: none; /* Allow full height when expanded */
+        overflow: visible; /* Make sure the text is visible */
     }
 
     .short-description {
@@ -517,6 +555,7 @@ h3 {
         font-size: 1rem; /* Adjust font size */
     }
 }
+
 
 
 
