@@ -10,10 +10,10 @@
     <div class="navbar">
         <div class="logo">Kryštof Jelínek</div>
         <ul class="nav-links">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#cv">CV</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" data-i18n="about">About Me</a></li>
+            <li><a href="#portfolio" data-i18n="portfolio">Portfolio</a></li>
+            <li><a href="#cv" data-i18n="cv">CV</a></li>
+            <li><a href="#contact" data-i18n="contact">Contact</a></li>
         </ul>
         <!-- Language buttons -->
         <div class="language-switch">
@@ -29,15 +29,15 @@
 
     <section class="hero">
         <div class="container">
-            <h2>Welcome to My Portfolio</h2>
-            <p>I’m a student of software engineering passionate about creating innovative solutions.</p>
-            <a href="#contact" class="cta-button">Let’s Connect</a>
+            <h2 data-i18n="welcome">Welcome to My Portfolio</h2>
+            <p data-i18n="moto">I’m Kryštof Jelínek, a student of software engineering passionate about creating innovative solutions.</p>
+            <a data-i18n= "connectbutton" href="#contact" class="cta-button">Let’s Connect</a>
         </div>
     </section>
 
     <section id="about" class="about">
         <div class="container">
-            <h2>About Me</h2>
+            <h2 data-i18n="about">About Me</h2>
             <div class="about-content">
                 <!-- Image on the left -->
                 <div class="about-image">
@@ -45,7 +45,7 @@
                 </div>
                 <!-- Text on the right -->
                 <div class="about-text">
-                    <p>
+                    <p data-i18n="aboutText">
                         My name is Kryštof Jelínek, and I am currently a third-year student at the 
                         Faculty of Information Technology, Czech Technical University in Prague, 
                         pursuing a degree in Software Engineering. My portfolio primarily includes projects 
@@ -62,14 +62,14 @@
 
     <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2>Portfolio</h2>
+            <h2 data-i18n="portfolio">Portfolio</h2>
             <table class="portfolio-table">
                 <tr>
                     <td class="portfolio-item">
                         <div class="portfolio-item-content">
                             <h3>ASCII Art App</h3>
                             <div class="short-description">
-                                <p>A modular Scala application that converts different image formats into ASCII art, 
+                                <p data-i18n="asciiShort">A modular Scala application that converts different image formats into ASCII art, 
                                     featuring customizable filters and clean command line interface. Designed with a strong focus on expandability 
                                     and object-oriented principles for maintainable, extensible architecture.</p>
                                 <ul class="short-description-points">
@@ -79,31 +79,33 @@
                                 </ul>
                             </div>
                             <div class="expanded-content">
-                                <p>
+                                <p data-i18n="asciiLong1">
                                     As a part of my studies I developed a modular, highly scalable Scala application designed with an emphasis on clean architecture and extensibility. 
                                     The system's design leverages object-oriented principles to create a flexible and maintainable codebase that easily accommodates future enhancements and new features.
                                 </p>
-                                <p>
+                                <p data-i18n="asciiLong2">
                                     The smooth flow of the application is largely driven by its modular structure, which enables seamless integration of different 
                                     image formats and conversion methods without disrupting the overall system. The design facilitates the easy 
                                     addition of new filters and features, ensuring the app can evolve alongside user needs.
                                 </p>
-                                <p>
+                                <p data-i18n="asciiLong3">
                                     A robust and flexible command-handling system was integrated to decouple logic from user interaction, enhancing both 
                                     maintainability and user experience. The application’s architecture prioritizes reusability and simplicity, ensuring 
                                     that every component is independent and reusable in other projects or use cases.
                                 </p>                                    
-                                <p>                                    
+                                <p data-i18n="asciiLong4">                                    
                                     This design-centric approach ensures the system remains easy to scale, modify, and maintain, laying a solid 
                                     foundation for long-term use while promoting efficient development practices.
                                 </p>
                                 <div class="app-example">
                                     <img src="AsciiResult.png" alt="Application Example" style="max-width: 100%; height: auto; margin: 20px 0;">
-                                    <p>
+                                    <p data-i18n="asciiLong5">
                                         Here’s an example of the app in action. You can clone the repository and explore the full functionality for yourself.
                                     </p>
                                     <p>
-                                        Check out the project on GitHub:
+                                        <span data-i18n="asciiLong6">
+                                            Check out the project on GitHub:
+                                        </span>
                                         <br>
                                         <a href="https://github.com/Krystof-Jelinek/AsciiArtApp" target="_blank">AsciiArtApp</a>
                                     </p>
@@ -115,7 +117,7 @@
                         <div class="portfolio-item-content">
                             <h3>Akrmat</h3>
                             <div class="short-description">
-                                <p class="short-description">Team-developed application for generating accreditation 
+                                <p class="short-description" data-i18n="akrmatShort">Team-developed application for generating accreditation 
                                     materials at the Faculty of Information Technology, designed to simplify the 
                                     accreditation process by leveraging data from external application APIs and using LaTeX for efficient PDF document generation.</p>
                                 <ul class="short-description-points">
@@ -125,26 +127,26 @@
                                 </ul>
                             </div>
                             <div class="expanded-content">
-                                <p>Akrmat is a team project developed at the Faculty of Information Technology. 
+                                <p data-i18n="akrmatLong1">Akrmat is a team project developed at the Faculty of Information Technology. 
                                     The application’s goal is to streamline the process of generating accreditation materials, such as study plans and programs, 
                                     using LaTeX to produce professional PDF documents for academic purposes.
                                 </p>
-                                <p>
+                                <p data-i18n="akrmatLong2">
                                     My main contribution was the development of a standalone microservice 
                                     that compiles LaTeX code into PDFs. This service integrates with the Akrmat system, 
                                     receiving LaTeX code via an API, processing it, and returning the generated PDF. 
                                     I was also responsible for modifyng, expanding, debugging and troubleshooting the LaTeX generation, ensuring that the documents met the required standards.
                                 </p>
-                                <p>
+                                <p data-i18n="akrmatLong3">
                                     LaTeX was completely new to me, and working with it presented a valuable challenge. 
                                     The LaTeX code in Akrmat is generated dynamically, taking inputs from various sources within the system to generate accurate accreditation documents. 
                                     By separating PDF generation into a standalone service, we ensured a clean, modular architecture that allows for easy maintenance and expansion.
                                 </p>                                    
-                                <p>
+                                <p data-i18n="akrmatLong4">
                                     This project was a great opportunity to work with external APIs and gain experience in LaTeX-based document generation, 
                                     while also improving my teamwork and problem-solving skills.</p>
                                 </p>
-                                <p>
+                                <p data-i18n="akrmatLong5">
                                     Please note that this project is a private, internal application 
                                     used at the Faculty of Information Technology, and as such, I am unable to provide the source code or full details. 
                                     However, if you are interested in learning more about this specific project, feel free to contact me, and I will be happy to provide further information.
@@ -156,7 +158,7 @@
                         <div class="portfolio-item-content">
                             <h3>Car Rent Portal</h3>
                             <div class="short-description">
-                                <p class="short-description">A Spring Boot Java application with REST API, ORM, and Azure database integration. 
+                                <p class="short-description" data-i18n="carShort">A Spring Boot Java application with REST API, ORM, and Azure database integration. 
                                     Built during the 3rd semester, featuring full CRUD operations and custom frontend implementation. 
                                     Designed with a 3-layer architecture, ensuring a clear separation of concerns.
                                 </p>
@@ -167,32 +169,34 @@
                                 </ul>
                             </div>
                             <div class="expanded-content">
-                                <p>
+                                <p data-i18n="carLong1">
                                     This project is a robust, three-layer Java application built using Spring Boot, designed to handle 
                                     car rental operations with integration to an Azure database. The application 
                                     implements a clean, modular architecture with a clear separation of concerns, adhering to the principles of maintainability and scalability.
                                 </p> 
-                                <p>
+                                <p data-i18n="carLong2">
                                     The backend is powered by Spring Boot, utilizing REST APIs to enable communication with the frontend. 
                                     The application is fully connected to an Azure database, with complex SQL queries executed through Spring Data JPA annotations. 
                                     Integrity constraints are enforced to ensure the consistency of the database, contributing to the overall reliability of the application.
                                 </p>   
-                                <p>
+                                <p data-i18n="carLong3">
                                     The frontend, developed as a separate application, communicates with the backend via RESTful services, providing 
                                     users with a dynamic and responsive interface. Both frontend and backend are designed to work together, offering a smooth user experience.
                                 </p>    
-                                <p>
+                                <p data-i18n="carLong4">
                                     The application also leverages Gradle as the build automation tool, ensuring a streamlined development process. 
                                     A fully configured Dockerfiles are included for both backend and frontend, making it easy to deploy and run the application in any environment.
                                     For testing, the project incorporates Mockito to mock dependencies and ensure the reliability of individual components.
                                 </p>                
-                                <p>                                        
+                                <p data-i18n="carLong5">                                        
                                     Additionally, the project utilizes Swagger UI for automatic API documentation generation, providing developers with an up-to-date, 
                                     interactive interface for testing and understanding the API endpoints.
                                 </p>
                                 <p>
-                                    If you're interested in exploring the project further, you can view both the frontend and backend code on GitHub. 
-                                    Feel free to check out the repositories for more details and insights:
+                                    <span data-i18n="carLong6">
+                                        If you're interested in exploring the project further, you can view both the frontend and backend code on GitHub. 
+                                        Feel free to check out the repositories for more details and insights:
+                                    </span>
                                     <br>
                                     <a href="https://github.com/Krystof-Jelinek/Spring-Boot-server" target="_blank">Backend GitHub Repository</a>
                                     <br>
@@ -207,7 +211,7 @@
                         <div class="portfolio-item-content">
                             <h3>Excel Engine</h3>
                             <div class="short-description">
-                                <p class="short-description">This project implements an engine for a spreadsheet processor that 
+                                <p class="short-description" data-i18n="excelShort">This project implements an engine for a spreadsheet processor that 
                                     simulates the behavior of a table (e.g., in Excel or Google Sheets) using an object-oriented approach in C++. 
                                     The key element of the solution is the use of inheritance and polymorphism.
                                 </p>
@@ -218,35 +222,36 @@
                                 </ul>
                             </div>
                             <div class="expanded-content">
-                                <p>This project implements a powerful engine for a spreadsheet processor that simulates the behavior of a 
+                                <p data-i18n="excelLong1">This project implements a powerful engine for a spreadsheet processor that simulates the behavior of a 
                                     table similar to tools like Excel or Google Sheets. Built using C++, the application focuses on accurately processing cells, 
                                     formulas, and detecting cyclic dependencies between them. It is designed with an object-oriented approach, utilizing inheritance 
                                     and polymorphism to model a variety of cell types and operations that can be performed on them.
 
                                     The core functionality revolves around:
                                     <ul>
-                                        <li>
+                                        <li data-i18n="excelLong2">
                                             Cell Handling: Each cell in the spreadsheet can contain different types of data, 
                                             including static values (such as numbers or text) or dynamic content (formulas that reference other cells).
                                         </li>
                                         <br>
-                                        <li>
+                                        <li data-i18n="excelLong3">
                                             Formula Evaluation: The processor can parse and compute formulas using a sophisticated Abstract Syntax Tree (AST) 
                                             stored in each cell. This allows for more efficient and accurate evaluations of formula results.
                                         </li>
                                         <br>
-                                        <li>
+                                        <li data-i18n="excelLong4">
                                             Cyclic Dependency Detection: One of the key features of the engine is its ability to detect 
                                             and manage cyclic dependencies between cells. This ensures that the processor does not enter an 
                                             infinite loop when a formula relies on the value of a cell that in turn depends on the original cell.
                                         </li>
                                         <br>
-                                        <li>
+                                        <li data-i18n="excelLong5">
                                             External Parser Integration: The engine integrates an external parser for formula input, 
                                             ensuring a smooth and flexible way of reading and processing user-defined formulas.</p>
                                         </li>
                                     </ul>
-                                    <p>
+                                    <br>
+                                    <p data-i18n="excelLong6">
                                         Unfortunately, I am unable to provide a public link to the project, as it is part of my academic work. 
                                         This restriction is in place to prevent any potential misuse or plagiarism, ensuring the integrity of the project and its originality. 
                                         However, if you are interested, feel free to contact me, and I can provide access to the project upon request.
@@ -258,10 +263,10 @@
                         <div class="portfolio-item-content">
                             <h3>Advanced SQL</h3>
                             <div class="short-description">
-                                <p class="short-description">Collection of assignments focusing on PLSQL 
+                                <p class="short-description" data-i18n="sqlShort">Collection of assignments focusing on PLSQL 
                                     and PgPLSQL, covering packages, procedures, triggers, recursion, 
                                     and execution plan optimization. Main emphasis is on PostgreSQL, but the
-                                    collection also includes sections that explore Oracle-specific implementations
+                                    collection also includes sections that explore Oracle-specific implementations.
                                 </p>
                                 <ul class="short-description-points">
                                     <li>PLSQL</li>
@@ -270,18 +275,18 @@
                                 </ul>
                             </div>
                             <div class="expanded-content">
-                                <p>
+                                <p data-i18n="sqlLong1">
                                     This collection of assignments delves into advanced SQL concepts and practices, 
                                     focusing on PLSQL and PgPLSQL. It encompasses a range of topics, including the 
                                     creation and management of triggers, the use of I/O packages for data processing, 
                                     execution plan optimization, and the implementation of SQL recursion for complex data queries.
                                 </p>
-                                <p>
+                                <p data-i18n="sqlLong2">
                                     While the primary emphasis is on PostgreSQL, the assignments also include sections exploring Oracle-specific features, 
                                     providing a well-rounded perspective on database programming. Each task is designed to enhance practical skills and a deep 
                                     understanding of advanced SQL functionalities.</p>
                                 </p>
-                                <p>
+                                <p data-i18n="sqlLong3">
                                     If you'd like to explore the full set of assignments, including detailed implementations and examples, 
                                     feel free to visit my GitHub repository. 
                                     There, you’ll find all the materials and source code.
@@ -295,8 +300,8 @@
                     <td class="portfolio-item">
                         <div class="portfolio-item-content">
                             <h3>Conceptual Modeling</h3>
-                            <div class="short-description">
-                                <p class="short-description">Project modeling the auto repair service domain using OntoUML, 
+                            <div class="short-description" data-i18n="komShort">
+                                <p class="short-description" >Project modeling the auto repair service domain using OntoUML, 
                                     UML, BPMN, and OCD diagrams. OntoUML captures core entities and the relationships between them, 
                                     while BPMN maps concrete processes. The OCD showcases the system's workflow.
                                 </p>
@@ -307,30 +312,30 @@
                                 </ul>
                             </div>
                             <div class="expanded-content">
-                                <p>
+                                <p data-i18n="komLong1">
                                     This project is centered around modeling the car repair service domain using various 
                                     modeling languages, including OntoUML, UML, BPMN, and DEMO. The main goal was to design a comprehensive 
                                     model of the domain, starting with the creation of an OntoUML diagram that identifies the 
                                     core entities involved in the auto repair service and defines the relationships between them. 
                                     The OntoUML model captures both the conceptual and structural aspects of the domain, providing a solid foundation for further analysis.
                                 </p>
-                                <p>
+                                <p data-i18n="komLong2">
                                     integrity constraints were defined using OCL (Object Constraint Language) to 
                                     ensure the model’s consistency and correctness. The system automatically 
-                                    checked for potential antipatterns within the OntoUML model
+                                    checked for potential antipatterns within the OntoUML model.
                                 </p>
-                                <p>
+                                <p data-i18n="komLong3">
                                     In addition to modeling the overall workflow, individual transactions were also modeled 
                                     within the system using DEMO (Design & Engineering Methodology for Organizations). 
                                     DEMO was used to capture the specific actions and interactions that occur in the system’s transactional processes, 
                                     ensuring that these processes align with the defined business rules and organizational structure.
                                 </p>
-                                <p>
+                                <p data-i18n="komLong4">
                                     Finally, an OCD (Organization Conceptual Diagram) was created to represent the structure 
                                     of the organization itself, outlining the roles, responsibilities, and relationships 
                                     between different organizational entities. This diagram provided a clear and comprehensive view of the organizational hierarchy.
                                 </p>
-                                <p>
+                                <p data-i18n="komLong5">
                                     If you're interested in exploring the full details of the project, including all diagrams and models, feel free to check out the complete work.
                                 </p>
                                 <a href="bi-kom_jelinkry_semestralka.pdf" target="_blank">View the project</a>
@@ -346,16 +351,16 @@
 
     <section id="cv" class="cv">
         <div class="container">
-            <h2>CV</h2>
-            <p>For a more detailed overview of my qualifications, skills, and experience, please view or download my CV using the links below:</p>
+            <h2 data-i18n="cv" >CV</h2>
+            <p data-i18n="cvText">For a more detailed overview of my qualifications, skills, and experience, please view or download my CV using the links below:</p>
             <div class="cv-buttons">
                 <!-- View Button (opens the CV in a new tab) -->
                 <a href="Krystof-Jelinek-zivotopis.pdf" class="cv-btn view" target="_blank">
-                    <button>View</button>
+                    <button data-i18n="cvView">View</button>
                 </a>
                 <!-- Download Button -->
                 <a href="Krystof-Jelinek-zivotopis.pdf" class="cv-btn download" download>
-                    <button>Download</button>
+                    <button data-i18n="cvDownload">Download</button>
                 </a>
             </div>
         </div>
@@ -366,29 +371,29 @@
         <div class="container">
             <!-- New Wrapper for Contact Cards -->
             <div class="contact-wrapper">
-                <h2>Contact Me</h2>
-                <p>Feel free to get in touch with me using any of these channels</p>
+                <h2 data-i18n="contactMe">Contact Me</h2>
+                <p data-i18n="contactMeSentence">Feel free to get in touch with me using any of these channels</p>
                 <div class="contact-grid">
                     <!-- Email -->
                     <a href="mailto:krys.jelinek@seznam.cz" class="contact-card">
                         <img src="email-icon.png" alt="Email" class="contact-icon" />
-                        <h3>Email</h3>
+                        <h3 data-i18n="email">Email</h3>
                         <p>krys.jelinek@seznam.cz</p>
                     </a>
                     <!-- Phone -->
                     <a href="tel:+420777737241" class="contact-card">
                         <img src="phone-icon.png" alt="Phone" class="contact-icon" />
-                        <h3>Phone</h3>
+                        <h3 data-i18n="phone">Phone</h3>
                         <p>+420 777 737 241</p>
                     </a>
                     <!-- LinkedIn -->
                     <a href="https://www.linkedin.com/in/kry%C5%A1tof-jel%C3%ADnek-b51296245/" target="_blank" class="contact-card">
                         <img src="linkedin-icon.png" alt="LinkedIn" class="contact-icon" />
-                        <h3>LinkedIn</h3>
-                        <p>Visit my profile</p>
+                        <h3 >LinkedIn</h3>
+                        <p data-i18n="linkedinSentence">Visit my profile</p>
                     </a>
                 </div>
-                <p>Thank you for reviewing my profile. I look forward to hearing from you and will be happy to respond as soon as possible!</p>
+                <p data-i18n="thankYou">Thank you for reviewing my profile. I look forward to hearing from you and will be happy to respond as soon as possible!</p>
             </div>
         </div>
     </footer>

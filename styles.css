@@ -330,8 +330,6 @@ body {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     cursor: pointer;
-    max-height: none;
-    height: auto;
     max-width: 100px;
     overflow: hidden;
     position: relative;
@@ -342,7 +340,7 @@ body {
 /* Expanding Text */
 .portfolio-item p {
     transition: max-height 0.3s ease;
-    max-height: 100px; /* Default collapsed height */
+    max-height: auto; /* Default collapsed height */
     overflow: hidden;
 }
 
@@ -390,6 +388,8 @@ body {
 .short-description{
     text-align: left;
     margin-left: 0.5rem;
+    max-height: none;
+    height: auto;
 }
 
 .short-description-points {
@@ -573,7 +573,6 @@ h3 {
     font-weight: bold;
     color: #333333;
     margin-bottom: 1.5rem;
-    text-transform: uppercase; /* Makes the header look bolder */
     letter-spacing: 2px; /* Slightly spaced letters for a modern look */
 }
 
