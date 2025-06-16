@@ -69,6 +69,15 @@ const translations = {
         carLong5: "Additionally, the project utilizes Swagger UI for automatic API documentation generation, providing developers with an up-to-date, interactive interface for testing and understanding the API endpoints.",
         carLong6: "Check out the project on GitHub:",
 
+        cfShort: "This project implements a movie recommendation system using collaborative filtering algorithms. The system is built with Python and Flask on the backend and features a dynamic user interface developed in React.",
+        cfLong1: "This project implements a collaborative filtering–based recommendation system for suggesting movies to users based on their rating behavior. It uses Python for backend logic, React for the frontend interface, and SQLite for data persistence. The system is designed to work with real-world data and simulate personalized recommendation workflows.",
+        cfLong2: "Similarity Functions: The engine supports multiple similarity metrics including cosine similarity, Pearson correlation, and Spearman rank correlation, allowing for flexible user similarity evaluations.",
+        cfLong3: "Personalized Recommendations: Based on a selected similarity metric, the system identifies similar users, predicts ratings for unseen movies, and returns top recommendations.",
+        cfLong4: "REST API: A Flask-based API enables dynamic recalculation of recommendations using parameters such as similarity function, neighbor count, number of suggested movies, or weighting factor (kappa). Results are returned in JSON format.",
+        cfLong5: "Frontend & Testing: The frontend interface, built with React and powered via npm, allows real-time interaction and testing. The project also includes a test suite to validate functionality under various configurations.",
+        cfLong6: "The full source code is available on GitHub:",
+
+
         excelShort: "This project implements an engine for a spreadsheet processor that simulates the behavior of a table (e.g., in Excel or Google Sheets) using an object-oriented approach in C++. The key element of the solution is the use of inheritance and polymorphism.",
         excelLong1: "This project implements a powerful engine for a spreadsheet processor that simulates the behavior of a table similar to tools like Excel or Google Sheets. Built using C++, the application focuses on accurately processing cells, formulas, and detecting cyclic dependencies between them. It is designed with an object-oriented approach, utilizing inheritance and polymorphism to model a variety of cell types and operations that can be performed on them.The core functionality revolves around:",
         excelLong2: "Cell Handling: Each cell in the spreadsheet can contain different types of data, including static values (such as numbers or text) or dynamic content (formulas that reference other cells).",
@@ -81,6 +90,22 @@ const translations = {
         sqlLong1: "This collection of assignments delves into advanced SQL concepts and practices, focusing on PLSQL and PgPLSQL. It encompasses a range of topics, including the creation and management of triggers, the use of I/O packages for data processing, execution plan optimization, and the implementation of SQL recursion for complex data queries.",
         sqlLong2: "While the primary emphasis is on PostgreSQL, the assignments also include sections exploring Oracle-specific features, providing a well-rounded perspective on database programming. Each task is designed to enhance practical skills and a deep understanding of advanced SQL functionalities.",
         sqlLong3: "If you'd like to explore the full set of assignments, including detailed implementations and examples, feel free to visit my GitHub repository. There, you’ll find all the materials and source code.",
+
+        aiShort: "A collection of classical AI problem solvers implemented in C++. Projects include search-based labyrinth solving with visualization, solving N-Queens and Sudoku puzzles using constraint-based reasoning and heuristics, and a PDDL-based planner moving agents.",
+        aiLong1: "This set of projects demonstrates foundational artificial intelligence techniques through a series of classic problem-solving tasks. Each problem was solved using appropriate AI algorithms, including both uninformed and informed search, constraint satisfaction, and automated planning approaches.",
+        aiLong2: "The Labyrinth Solver uses algorithms like BFS, DFS, Random Search, Greedy Search, and A* to find paths through mazes. A visualizer component animates the search step by step, allowing for direct comparison of algorithm behavior and efficiency.",
+        aiExample: "Example:",
+        aiLong3: "The N-Queens Solver explores backtracking and heuristics to place N queens on a chessboard such that no two threaten each other. Visual outputs clearly display successful placements and solution progress.",
+        aiLong4: "The Sudoku Solver uses a combination of backtracking and constraint propagation with MRV heuristics to efficiently solve even highly complex puzzles with minimal initial clues. It supports domain filtering to reduce search space and includes a terminal-based output. If no puzzle is provided, the solver automatically fetches a random Sudoku puzzle from a public API.",
+        aiLong5: "The PDDL Planning project solves the Multi-Agent Path Finding (MAPF) problem on an undirected graph. Agents must reach their goals without collisions, and the task is encoded in PDDL. An external planner computes valid, often optimal, solutions.",
+        aiLong6: "The projects demonstrate fundamental approaches to problem-solving using artificial intelligence and showcase their practical application across various types of tasks.",
+
+        osProjectsShort: "Assignments focusing on core OS concepts such as multithreading synchronization and file system design. Main emphasis on implementations of classical problems like producer-consumer, and the creation of a custom file system inspired by the FAT architecture.",
+        osProjectsLong1: "This collection covers advanced operating systems topics through hands-on projects in C++. The first project tackled multithreading synchronization, implementing a classical producer-consumer problem. The solution required careful management of threads and synchronization primitives to ensure safe and efficient data exchange, demonstrating solid understanding of concurrency control.",
+        osProjectsLong2: "The second project involved designing and implementing a simplified custom file system modeled similarly to the FAT architecture. This task required creating a working interface for file management, including allocation tables and file metadata handling, showcasing practical skills in low-level systems programming and file system internals.",
+        osProjectsLong3: "Working on these projects helped me develop stronger problem-solving skills and a deeper understanding of essential OS concepts. Through practical application of C++ coding techniques, I gained valuable experience that I hope will be useful in future system-level development.",
+        osProjectsLong4: "For more details and to explore the source code, you can visit my GitHub repository.",
+
 
         komShort: "Project modeling the car repair service domain using OntoUML, UML, BPMN, and OCD diagrams. OntoUML captures core entities and the relationships between them, while BPMN maps concrete processes. The OCD showcases the system's workflow.",
         komLong1: "This project is centered around modeling the car repair service domain using various modeling languages, including OntoUML, UML, BPMN, and DEMO. The main goal was to design a comprehensive model of the domain, starting with the creation of an OntoUML diagram that identifies the core entities involved in the auto repair service and defines the relationships between them. The OntoUML model captures both the conceptual and structural aspects of the domain, providing a solid foundation for further analysis.",
@@ -135,6 +160,15 @@ const translations = {
         carLong5: "Dále projekt využívá Swagger UI pro automatickou generaci dokumentace API, což poskytuje vývojářům aktuální, interaktivní rozhraní pro testování a porozumění API endpointům.",
         carLong6: "Podívejte se na projekt na GitHubu:",
 
+        cfShort: "Tento projekt implementuje systém pro doporučování filmů pomocí algoritmů kolaborativního filtrování. Backend je postaven v Pythonu a Flasku, zatímco dynamické uživatelské rozhraní je vytvořeno v Reactu.",
+        cfLong1: "Projekt implementuje systém pro doporučování filmů založený na kolaborativním filtrování, který doporučuje filmy na základě hodnocení uživatelů. Backendová logika je napsaná v Pythonu, frontendové rozhraní je vytvořeno v Reactu a data jsou uchovávána pomocí SQLite. Systém je navržen pro práci s reálnými daty a simulaci personalizovaného doporučování.",
+        cfLong2: "Funkce podobnosti: Systém podporuje různé metriky podobnosti, včetně kosinové podobnosti, Pearsonovy korelace a Spearmanova pořadového koeficientu. To umožňuje flexibilní hodnocení podobnosti mezi uživateli.",
+        cfLong3: "Personalizovaná doporučení: Na základě zvolené metriky podobnosti systém identifikuje podobné uživatele, predikuje hodnocení pro neviděné filmy a vrací nejvhodnější doporučení.",
+        cfLong4: "REST API: Flaskové API umožňuje dynamický přepočet doporučení pomocí parametrů jako typ podobnosti, počet sousedů, počet doporučených filmů nebo váhový faktor (kappa). Výsledky jsou vraceny ve formátu JSON.",
+        cfLong5: "Frontend a testování: Uživatelské rozhraní je postaveno v Reactu a provozováno pomocí npm. Umožňuje interaktivní testování v reálném čase. Projekt navíc obsahuje testovací sadu pro ověření funkcionality v různých konfiguracích.",
+        cfLong6: "Zdrojový kód je dostupný na GitHubu:",
+
+
         excelShort: "Tento projekt implementuje engine pro tabulkový procesor, který simuluje chování tabulky (např. v Excelu nebo Google Sheets) pomocí objektově orientovaného přístupu v C++. Klíčovým prvkem řešení je použití dědičnosti a polymorfismu.",
         excelLong1: "Tento projekt implementuje výkonný tabulkový engine, který simuluje chování tabulky podobně jako nástroje jako Excel nebo Google Sheets. Aplikace je postavena v C++ a zaměřuje se na přesné zpracování buněk, vzorců a detekci cyklických závislostí mezi nimi. Je navržena s objektově orientovaným přístupem, využívající dědičnost a polymorfismus k modelování různých typů buněk a operací, které je možné na nich provádět. Hlavní funkcionalita se zaměřuje na:",
         excelLong2: "Manipulace s buňkami: Každá buňka v tabulce může obsahovat různé typy dat, včetně statických hodnot (například čísla nebo text) nebo dynamického obsahu (vzorců, které odkazují na jiné buňky).",
@@ -148,6 +182,16 @@ const translations = {
         sqlLong2: "Hlavní důraz je kladen na PostgreSQL, ale úkoly také obsahují sekce zkoumající funkce specifické pro Oracle, čímž poskytují ucelený pohled na databázové programování. Každý úkol je navržen tak, aby zlepšil praktické dovednosti a porozumění pokročilým SQL funkcionalitám.",
         sqlLong3: "Pokud byste se chtěli podívat na celý soubor úkolů, včetně konkrétních implementací a příkladů, navštívit můj GitHub repository. Tam najdete všechny materiály včetně zdrojových kódů.",
 
+        aiShort: "Sbírka solverů klasických AI problémů implementovaných v C++. Projekty zahrnují hledání cesty v bludišti s vizualizací, řešení úloh N-dam a Sudoku pomocí omezení a heuristik, a plánovač v PDDL pro pohyb agentů.",
+        aiLong1: "Tato sada projektů demonstruje základní techniky umělé inteligence prostřednictvím klasických úloh. Každý problém byl řešen vhodnými AI algoritmy, včetně neinformovaného i informovaného prohledávání, úloh splnění omezení a automatického plánování.",
+        aiLong2: "Solver bludišť využívá algoritmy jako BFS, DFS, náhodné prohledávání, hladové prohledávání a A*, aby nalezl cestu bludištěm. Vizualizační komponenta animuje postup hledání krok za krokem, což umožňuje přímé porovnání chování a efektivity jednotlivých algoritmů.",
+        aiExample: "Příklad:",
+        aiLong3: "Solver úlohy N-dám používá backtracking a heuristiky k umístění N dam na šachovnici tak, aby se žádné vzájemně neohrožovaly. Vizualizace jasně ukazuje úspěšná rozmístění a průběh hledání řešení.",
+        aiLong4: "Solver Sudoku kombinuje backtracking a propagaci omezení s MRV heuristikami pro efektivní řešení i velmi složitých problémů s minimem počátečních čísel. Podporuje filtrování čísel pro zmenšení prostoru hledání a nabízí výstup v terminálu. Pokud žádné zadání není poskytnuto, automaticky stáhne náhodné Sudoku z veřejného API.",
+        aiLong5: "Projekt plánování v PDDL řeší problém plánování pohybu více agentů (MAPF) na neorientovaném grafu. Agenti se musí dostat do cílových pozic bez kolizí a úloha je zapsána v jazyce PDDL. Externí plánovač vypočítává korektní, často i optimální řešení.",
+        aiLong6: "Projekty demonstrují základní přístupy k řešení problémů pomocí umělé inteligence a ukazují jejich praktické využití v různých typech úloh.",
+
+
         komShort: "Projekt modelující doménu autoservisních služeb pomocí OntoUML, UML, BPMN a OCD diagramů. OntoUML zachycuje klíčové entity a vztahy mezi nimi, BPMN mapuje konkrétní procesy. OCD zobrazuje celkovou strukturu systému.",
         komLong1: "Tento projekt se zaměřuje na modelování domény autoservisu pomocí různých modelovacích jazyků, včetně OntoUML, UML, BPMN a DEMO. Hlavním cílem bylo navrhnout komplexní model této domény, počínaje vytvořením OntoUML diagramu, který identifikuje klíčové entity zapojené do autoservisních služeb a definuje vztahy mezi nimi. OntoUML model zachycuje jak koncepční, tak strukturální aspekty domény a poskytuje pevný základ pro další analýzu.",
         komLong2: "Integritní omezení byla definována pomocí OCL (Object Constraint Language), aby byla zajištěna konzistence a správnost modelu. Systém automaticky zkontroloval potenciální antipatterny v rámci OntoUML modelu.",
@@ -155,6 +199,13 @@ const translations = {
         komLong4: "Nakonec byl vytvořen OCD (Organizační koncepční diagram), který reprezentuje strukturu samotné organizace, vymezuje role, odpovědnosti a vztahy mezi různými organizačními entitami. Tento diagram poskytl jasný a komplexní pohled na organizační hierarchii.",
         komLong5: "Pokud máte zájem o prozkoumání kompletních detailů projektu, včetně všech diagramů a modelů, neváhejte se podívat na celou práci.",
         viewProjectLink: "Zobrazit projekt",
+
+        osProjectsShort: "Úkoly zaměřené na základní principy operačních systémů, jako je synchronizace vláken a návrh souborového systému. Hlavní pozornost je věnována řešení klasických problémů, například producent-konzument, a tvorbě vlastního souborového systému inspirovaného architekturou FAT.",
+        osProjectsLong1: "Tato sada projektů se věnuje pokročilým tématům operačních systémů formou praktických úkolů v C++. První projekt řešil synchronizaci vláken a implementaci klasického problému producent-konzument. Bylo potřeba pečlivě řídit vlákna a synchronizační nástroje, aby byla zajištěna bezpečná a efektivní výměna dat, což ukazuje dobré porozumění problematice paralelního zpracování.",
+        osProjectsLong2: "Druhý projekt spočíval v návrhu a implementaci jednoduchého vlastního souborového systému, který byl modelován podobně jako architektura FAT. Úkolem bylo vytvořit funkční rozhraní pro správu souborů včetně alokačních tabulek a metadat, což předvedlo praktické znalosti nízkoúrovňového programování a fungování souborových systémů.",
+        osProjectsLong3: "Práce na těchto projektech mi pomohla zlepšit schopnosti řešit problémy a lépe pochopit základní principy operačních systémů. Díky praktickému využití programování v C++ jsem získal cenné zkušenosti, které doufám využiju při další práci na systémovém softwaru.",
+        osProjectsLong4: "Pro více informací a ke shlédnutí zdrojového kódu můžete navštívit můj GitHub repozitář.",
+
 
         cvText: "Pro podrobnější přehled mých kvalifikací, dovedností a zkušeností si prosím prohlédněte nebo stáhněte můj životopis pomocí následujících odkazů:",
         cvView: "Zobrazit",

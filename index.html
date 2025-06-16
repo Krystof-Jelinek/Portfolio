@@ -209,6 +209,149 @@
                 <tr>
                     <td class="portfolio-item">
                         <div class="portfolio-item-content">
+                            <h3>Collaborative Filtering System</h3>
+                            <div class="short-description">
+                                <p class="short-description" data-i18n="cfShort">
+                                    This project implements a movie recommendation system using collaborative filtering algorithms. 
+                                    The system is built with Python and Flask on the backend and features a dynamic user interface developed in React.
+                                </p>
+                                <ul class="short-description-points">
+                                    <li>Python</li>
+                                    <li>Flask</li>
+                                    <li>React</li>
+                                </ul>
+                            </div>
+                            <div class="expanded-content">
+                                <p data-i18n="cfLong1">
+                                    This project implements a collaborative filtering–based recommendation system for suggesting movies to users based on their rating behavior. 
+                                    It uses Python for backend logic, React for the frontend interface, and SQLite for data persistence. 
+                                    The system is designed to work with real-world data and simulate personalized recommendation workflows.
+                                    <ul>
+                                        <li data-i18n="cfLong2">
+                                            Similarity Functions: The engine supports multiple similarity metrics including cosine similarity, Pearson correlation, and Spearman rank correlation, 
+                                            allowing for flexible user similarity evaluations.
+                                        </li>
+                                        <br>
+                                        <li data-i18n="cfLong3">
+                                            Personalized Recommendations: Based on a selected similarity metric, the system identifies similar users, predicts ratings for unseen movies, 
+                                            and returns top recommendations.
+                                        </li>
+                                        <br>
+                                        <li data-i18n="cfLong4">
+                                            REST API: A Flask-based API enables dynamic recalculation of recommendations using parameters such as similarity function, neighbor count, 
+                                            number of suggested movies, or weighting factor (kappa). Results are returned in JSON format.
+                                        </li>
+                                        <br>
+                                        <li data-i18n="cfLong5">
+                                            Frontend & Testing: The frontend interface, built with React and powered via npm, allows real-time interaction and testing. 
+                                            The project also includes a test suite to validate functionality under various configurations.
+                                        </li>
+                                    </ul>
+                                </p>
+                                <br>
+                                <p data-i18n="cfLong6">
+                                    The full source code is available on GitHub: 
+                                </p>
+                                <a href="https://github.com/Krystof-Jelinek/Colaborative-Filtering" target="_blank">
+                                    Colaborative Filtering App
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="portfolio-item">
+                        <div class="portfolio-item-content">
+                            <h3>Advanced SQL</h3>
+                            <div class="short-description">
+                                <p class="short-description" data-i18n="sqlShort">Collection of assignments focusing on PLSQL 
+                                    and PgPLSQL, covering packages, procedures, triggers, recursion, 
+                                    and execution plan optimization. Main emphasis is on PostgreSQL, but the
+                                    collection also includes sections that explore Oracle-specific implementations.
+                                </p>
+                                <ul class="short-description-points">
+                                    <li>PLSQL</li>
+                                    <li>PgPLSQL</li>
+                                    <li>Triggers</li>
+                                </ul>
+                            </div>
+                            <div class="expanded-content">
+                                <p data-i18n="sqlLong1">
+                                    This collection of assignments delves into advanced SQL concepts and practices, 
+                                    focusing on PLSQL and PgPLSQL. It encompasses a range of topics, including the 
+                                    creation and management of triggers, the use of I/O packages for data processing, 
+                                    execution plan optimization, and the implementation of SQL recursion for complex data queries.
+                                </p>
+                                <p data-i18n="sqlLong2">
+                                    While the primary emphasis is on PostgreSQL, the assignments also include sections exploring Oracle-specific features, 
+                                    providing a well-rounded perspective on database programming. Each task is designed to enhance practical skills and a deep 
+                                    understanding of advanced SQL functionalities.</p>
+                                </p>
+                                <p data-i18n="sqlLong3">
+                                    If you'd like to explore the full set of assignments, including detailed implementations and examples, 
+                                    feel free to visit my GitHub repository. 
+                                    There, you’ll find all the materials and source code.
+                                </p>
+                                <p>
+                                    <a href="https://github.com/Krystof-Jelinek/FIT_SQL_assignments" target="_blank">GitHub repository</a>
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="portfolio-item">
+                        <div class="portfolio-item-content">
+                            <h3>AI Projects</h3>
+                            <div class="short-description">
+                                <p class="short-description" data-i18n="aiShort">
+                                    A collection of classical AI problem solvers implemented in C++. Projects include search-based labyrinth solving with visualization, 
+                                    solving N-Queens and Sudoku puzzles using constraint-based reasoning and heuristics, and a PDDL-based planner moving agents.
+                                </p>
+                                <ul class="short-description-points">
+                                    <li>Search Algorithms</li>
+                                    <li>Constraint Satisfaction</li>
+                                    <li>C++</li>
+                                </ul>
+                            </div>
+                            <div class="expanded-content">
+                                <p data-i18n="aiLong1">
+                                    This set of projects demonstrates foundational artificial intelligence techniques through a series of classic problem-solving tasks.
+                                    Each problem was solved using appropriate AI algorithms, including both uninformed and informed search, constraint satisfaction,
+                                    and automated planning approaches.
+                                </p>
+                                <p data-i18n="aiLong2">
+                                    The <strong>Labyrinth Solver</strong> uses algorithms like BFS, DFS, Random Search, Greedy Search, and A* to find paths through mazes.
+                                    A visualizer component animates the search step by step, allowing for direct comparison of algorithm behavior and efficiency.
+                                </p>
+                                <p data-i18n="aiExample" >Example:</p>
+                                <img src="A*path.png" alt="Maze solver visualization" style="max-width: 100%; height: auto; margin-top: 10px;">
+                                <br>
+                                <br>
+                                <p data-i18n="aiLong3">
+                                    The <strong>N-Queens Solver</strong> explores backtracking and heuristics to place N queens on a chessboard such that no two threaten each other.
+                                    Visual outputs clearly display successful placements and solution progress.
+                                </p>
+                                <p data-i18n="aiLong4">
+                                    The <strong>Sudoku Solver</strong> uses a combination of backtracking and constraint propagation with MRV heuristics 
+                                    to efficiently solve even highly complex puzzles with minimal initial clues. It supports domain filtering to reduce search space 
+                                    and includes a terminal-based output. If no puzzle is provided, the solver automatically fetches a random Sudoku puzzle from a public API.
+                                </p>
+                                <p data-i18n="aiExample" >Example:</p>
+                                <img src="sudoku.png" alt="Sudoku solver visualization" style="max-width: 100%; height: auto; margin-top: 10px;">
+                                <br>
+                                <br>
+                                <p data-i18n="aiLong5">
+                                    The <strong>PDDL Planning</strong> project solves the Multi-Agent Path Finding (MAPF) problem on an undirected graph. 
+                                    Agents must reach their goals without collisions, and the task is encoded in PDDL. An external planner computes valid, often optimal, solutions.
+                                </p>
+                                <p data-i18n="aiLong6">
+                                    These projects highlight key AI problem-solving paradigms in a hands-on way and can be used for both teaching and demonstration purposes.
+                                </p>
+                                <a href="https://github.com/Krystof-Jelinek/AiProjects" target="_blank" data-i18n="viewProjectLink">View the project</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="portfolio-item">
+                        <div class="portfolio-item-content">
                             <h3>Excel Engine</h3>
                             <div class="short-description">
                                 <p class="short-description" data-i18n="excelShort">This project implements an engine for a spreadsheet processor that 
@@ -261,39 +404,39 @@
                     </td>
                     <td class="portfolio-item">
                         <div class="portfolio-item-content">
-                            <h3>Advanced SQL</h3>
+                            <h3 data-i18n="osProjectsTitle">Operating Systems Projects</h3>
                             <div class="short-description">
-                                <p class="short-description" data-i18n="sqlShort">Collection of assignments focusing on PLSQL 
-                                    and PgPLSQL, covering packages, procedures, triggers, recursion, 
-                                    and execution plan optimization. Main emphasis is on PostgreSQL, but the
-                                    collection also includes sections that explore Oracle-specific implementations.
+                                <p class="short-description" data-i18n="osProjectsShort">
+                                    Assignments focusing on core OS concepts such as multithreading synchronization and file system design. 
+                                    Main emphasis on implementations of classical problems like producer-consumer, 
+                                    and the creation of a custom file system inspired by the FAT architecture.
                                 </p>
                                 <ul class="short-description-points">
-                                    <li>PLSQL</li>
-                                    <li>PgPLSQL</li>
-                                    <li>Triggers</li>
+                                    <li data-i18n="osProjectsPoint1">Multithreading</li>
+                                    <li data-i18n="osProjectsPoint2">File System</li>
+                                    <li data-i18n="osProjectsPoint3">C++</li>
                                 </ul>
                             </div>
                             <div class="expanded-content">
-                                <p data-i18n="sqlLong1">
-                                    This collection of assignments delves into advanced SQL concepts and practices, 
-                                    focusing on PLSQL and PgPLSQL. It encompasses a range of topics, including the 
-                                    creation and management of triggers, the use of I/O packages for data processing, 
-                                    execution plan optimization, and the implementation of SQL recursion for complex data queries.
+                                <p data-i18n="osProjectsLong1">
+                                    This collection covers advanced operating systems topics through hands-on projects in C++. 
+                                    The first project tackled multithreading synchronization, implementing a classical producer-consumer problem. 
+                                    The solution required careful management of threads and synchronization primitives to ensure safe and efficient data exchange, 
+                                    demonstrating solid understanding of concurrency control.
                                 </p>
-                                <p data-i18n="sqlLong2">
-                                    While the primary emphasis is on PostgreSQL, the assignments also include sections exploring Oracle-specific features, 
-                                    providing a well-rounded perspective on database programming. Each task is designed to enhance practical skills and a deep 
-                                    understanding of advanced SQL functionalities.</p>
+                                <p data-i18n="osProjectsLong2">
+                                    The second project involved designing and implementing a simplified custom file system modeled similarly to the FAT architecture. 
+                                    This task required creating a working interface for file management, including allocation tables and file metadata handling, 
+                                    showcasing practical skills in low-level systems programming and file system internals.
                                 </p>
-                                <p data-i18n="sqlLong3">
-                                    If you'd like to explore the full set of assignments, including detailed implementations and examples, 
-                                    feel free to visit my GitHub repository. 
-                                    There, you’ll find all the materials and source code.
+                                <p data-i18n="osProjectsLong3">
+                                    Working on these projects helped me develop stronger problem-solving skills and a deeper understanding of essential OS concepts. 
+                                    Through practical application of C++ coding techniques, I gained valuable experience that I hope will be useful in future system-level development.
                                 </p>
-                                <p>
-                                    <a href="https://github.com/Krystof-Jelinek/FIT_SQL_assignments" target="_blank">GitHub repository</a>
+                                <p data-i18n="osProjectsLong4">
+                                    For more details and to explore the source code, you can visit my;
                                 </p>
+                                <a href="https://github.com/Krystof-Jelinek/OperationalSystems" target="_blank" rel="noopener noreferrer">GitHub repository</a>.
                             </div>
                         </div>
                     </td>
