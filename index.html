@@ -49,7 +49,7 @@
                         My name is Kryštof Jelínek, and I am currently a third-year student at the 
                         Faculty of Information Technology, Czech Technical University in Prague, 
                         pursuing a degree in Software Engineering. My portfolio primarily includes projects 
-                        developed in Java, C++, Kotlin, and Scala, along with database and conceptual modeling work. 
+                        developed in Java, C++, Kotlin, and Python, along with database and conceptual modeling work. 
                         These projects are an integral part of my academic curriculum and reflect my personal interests. 
                         I am set to graduate from CTU in 2026 and am actively seeking job opportunities that offer hands-on experience 
                         in software engineering, as well as support with my bachelor’s thesis. I am always excited to take on new challenges 
@@ -65,6 +65,92 @@
             <h2 data-i18n="portfolio">Portfolio</h2>
             <table class="portfolio-table">
                 <tr>
+                    <td class="portfolio-item">
+                        <div class="portfolio-item-content">
+                            <h3>Akrmat</h3>
+                            <div class="short-description">
+                                <p class="short-description" data-i18n="akrmatShort">Team-developed application for generating accreditation 
+                                    materials at the Faculty of Information Technology, designed to simplify the 
+                                    accreditation process by leveraging data from external application APIs and using LaTeX for efficient PDF document generation.</p>
+                                <ul class="short-description-points">
+                                    <li>Kotlin</li>
+                                    <li>LaTeX</li>
+                                    <li>API</li>
+                                </ul>
+                            </div>
+                            <div class="expanded-content">
+                                <p data-i18n="akrmatLong1">Akrmat is a team project developed at the Faculty of Information Technology. 
+                                    The application’s goal is to streamline the process of generating accreditation materials, such as study plans and programs, 
+                                    using LaTeX to produce professional PDF documents for academic purposes.
+                                </p>
+                                <p data-i18n="akrmatLong2">
+                                    My main contribution was the development of a standalone microservice 
+                                    that compiles LaTeX code into PDFs. This service integrates with the Akrmat system, 
+                                    receiving LaTeX code via an API, processing it, and returning the generated PDF. 
+                                    I was also responsible for modifyng, expanding, debugging and troubleshooting the LaTeX generation, ensuring that the documents met the required standards.
+                                </p>
+                                <p data-i18n="akrmatLong3">
+                                    LaTeX was completely new to me, and working with it presented a valuable challenge. 
+                                    The LaTeX code in Akrmat is generated dynamically, taking inputs from various sources within the system to generate accurate accreditation documents. 
+                                    By separating PDF generation into a standalone service, we ensured a clean, modular architecture that allows for easy maintenance and expansion.
+                                </p>                                    
+                                <p data-i18n="akrmatLong4">
+                                    This project was a great opportunity to work with external APIs and gain experience in LaTeX-based document generation, 
+                                    while also improving my teamwork and problem-solving skills.</p>
+                                </p>
+                                <p data-i18n="akrmatLong5">
+                                    Please note that this project is a private, internal application 
+                                    used at the Faculty of Information Technology, and as such, I am unable to provide the source code or full details. 
+                                    However, if you are interested in learning more about this specific project, feel free to contact me, and I will be happy to provide further information.
+                                </p>                                  
+                            </div>
+                        </div>
+                    </td>
+                    <td class="portfolio-item">
+                        <div class="portfolio-item-content">
+                            <h3>Web Automation</h3>
+                            <div class="short-description">
+                                <p class="short-description" data-i18n="workShort">
+                                    Professional automation platform developed for Atos, featuring advanced web scraping, 
+                                    real-time data synchronization, and a robust data persistence layer.
+                                </p>
+                                <ul class="short-description-points">
+                                    <li>Playwright</li>
+                                    <li>React & WebSockets</li>
+                                    <li>Alembic</li>
+                                </ul>
+                            </div>
+                            <div class="expanded-content">
+                                <p data-i18n="workLong1">
+                                    During this professional engagement at Atos, I was responsible for the complete architectural overhaul of a 
+                                    web automation system. This included a large-scale refactoring of the codebase from a functional 
+                                    approach to a strict Object-Oriented Programming (OOP) model, significantly improving maintainability 
+                                    and scalability.
+                                </p>
+                                <p data-i18n="workLong2">
+                                    The technical core utilizes Python with Playwright for high-performance web scraping and data extraction. 
+                                    To ensure reliable data persistence, I implemented an automated management system using Alembic 
+                                    for database migrations and custom scripts for periodic database cleaning, ensuring the system 
+                                    remains optimized by removing legacy data.
+                                </p>
+                                <p data-i18n="workLong3">
+                                    On the frontend, I developed and refactored components in React, integrating WebSockets to provide 
+                                    users with dynamic, real-time data updates without page refreshes. I also managed and updated 
+                                    REST APIs to ensure seamless communication between the scraping engine and the user interface.
+                                </p>
+                                <p data-i18n="workLong4">
+                                    Beyond development, I contributed to the UI/UX design, creating an intuitive interface for monitoring 
+                                    automated tasks. My role involved ensuring data persistence across the entire lifecycle of the 
+                                    scraping process and maintaining the overall stability of the production environment.
+                                </p>
+
+                                <p data-i18n="workNDA" style="font-style: italic; color: #888; border-left: 2px solid #ccc; padding-left: 15px; margin-top: 20px;">
+                                    Due to a Non-Disclosure Agreement (NDA), I cannot provide further technical documentation or source code for this project.
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </td>
                     <td class="portfolio-item">
                         <div class="portfolio-item-content">
                             <h3>ASCII Art App</h3>
@@ -113,44 +199,74 @@
                             </div>
                         </div>
                     </td>
+                </tr>
+                <tr>
                     <td class="portfolio-item">
                         <div class="portfolio-item-content">
-                            <h3>Akrmat</h3>
+                            <h3>Advanced Tetris</h3>
                             <div class="short-description">
-                                <p class="short-description" data-i18n="akrmatShort">Team-developed application for generating accreditation 
-                                    materials at the Faculty of Information Technology, designed to simplify the 
-                                    accreditation process by leveraging data from external application APIs and using LaTeX for efficient PDF document generation.</p>
+                                <p class="short-description" data-i18n="tetrisShort">
+                                    A high-performance Python implementation of Tetris featuring LAN multiplayer 
+                                    and a modular ability system. The project focuses on clean architecture, 
+                                    asynchronous networking, and software quality standards.
+                                </p>
                                 <ul class="short-description-points">
-                                    <li>Kotlin</li>
-                                    <li>LaTeX</li>
-                                    <li>API</li>
+                                    <li>Design Patterns</li>
+                                    <li>LAN Multiplayer</li>
+                                    <li>Pytest & Pylint</li>
                                 </ul>
                             </div>
                             <div class="expanded-content">
-                                <p data-i18n="akrmatLong1">Akrmat is a team project developed at the Faculty of Information Technology. 
-                                    The application’s goal is to streamline the process of generating accreditation materials, such as study plans and programs, 
-                                    using LaTeX to produce professional PDF documents for academic purposes.
+                                <p data-i18n="tetrisLong1">
+                                    This project is an advanced Tetris application developed using Python and the Pyglet 
+                                    library for high-performance graphics rendering and input handling. The primary goal 
+                                    was to go beyond basic gameplay by creating a robust, extensible engine built on 
+                                    Object-Oriented Programming (OOP) principles, ensuring a strict separation between 
+                                    game logic, networking, and the user interface.
                                 </p>
-                                <p data-i18n="akrmatLong2">
-                                    My main contribution was the development of a standalone microservice 
-                                    that compiles LaTeX code into PDFs. This service integrates with the Akrmat system, 
-                                    receiving LaTeX code via an API, processing it, and returning the generated PDF. 
-                                    I was also responsible for modifyng, expanding, debugging and troubleshooting the LaTeX generation, ensuring that the documents met the required standards.
+                                <p data-i18n="tetrisLong2">
+                                    The standout feature is the LAN multiplayer mode, allowing players to compete in 
+                                    real-time via socket communication. To enhance gameplay depth, I implemented a 
+                                    "Modular Ability System." This architecture allows for the seamless integration of 
+                                    unique player abilities and offensive modifiers (attacks) without altering the 
+                                    core engine, utilizing design patterns to maintain scalability.
                                 </p>
-                                <p data-i18n="akrmatLong3">
-                                    LaTeX was completely new to me, and working with it presented a valuable challenge. 
-                                    The LaTeX code in Akrmat is generated dynamically, taking inputs from various sources within the system to generate accurate accreditation documents. 
-                                    By separating PDF generation into a standalone service, we ensured a clean, modular architecture that allows for easy maintenance and expansion.
-                                </p>                                    
-                                <p data-i18n="akrmatLong4">
-                                    This project was a great opportunity to work with external APIs and gain experience in LaTeX-based document generation, 
-                                    while also improving my teamwork and problem-solving skills.</p>
+
+                                <div class="app-example">
+                                    <img src="Tetris.png" alt="Tetris Gameplay Example" style="max-width: 100%; height: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                                    <p data-i18n="tetrisExampleText">
+                                        Above is a preview of the game in action, showcasing the multiplayer interface and the active ability system. 
+                                        The clean UI is rendered efficiently using Pyglet's batch drawing capabilities.
+                                    </p>
+                                </div>
+
+                                <p data-i18n="tetrisLong3">
+                                    Code quality and stability were central to the development process. The project 
+                                    incorporates a comprehensive suite of unit tests using the Pytest framework, 
+                                    covering critical components like line-clearance logic and network packet 
+                                    synchronization. To ensure maintainability and professional standards, the 
+                                    entire codebase adheres to a strict codestyle enforced by Pylint.
                                 </p>
-                                <p data-i18n="akrmatLong5">
-                                    Please note that this project is a private, internal application 
-                                    used at the Faculty of Information Technology, and as such, I am unable to provide the source code or full details. 
-                                    However, if you are interested in learning more about this specific project, feel free to contact me, and I will be happy to provide further information.
-                                </p>                                  
+                                <p data-i18n="tetrisLong4">
+                                    The system's modularity ensures that components such as the network handler, 
+                                    game state manager, and UI renderer are decoupled. This structure not only 
+                                    facilitates easier debugging but also allows for future expansions, such as 
+                                    new game modes or alternative rendering backends.
+                                </p>
+                                <p>
+                                    <span data-i18n="tetrisLong5">
+                                    If you want to try out the gameplay you can download the prepared exe file for windows here:  
+                                    </span>
+                                    <a href="https://drive.google.com/file/d/1cmamcII9EuKU86f3oFSCVhNXQnwwAKa9/view" target="_blank" data-i18n="Download" style="font-weight: bold; text-decoration: underline;"></a>
+                                </p>
+
+                                <p data-i18n="tetrisLong6">
+                                    If you're interested in exploring the technical architecture, the implementation 
+                                    of the ability system, or the networking protocols or you just want to play the game, 
+                                    feel free to check out 
+                                    the full source code and documentation.
+                                </p>
+                                <a href="https://github.com/Krystof-Jelinek/Advanced_Tetris" target="_blank" data-i18n="viewProjectLink">View the project on GitHub</a>
                             </div>
                         </div>
                     </td>
@@ -205,8 +321,6 @@
                             </div>
                         </div>
                     </td>
-                </tr>
-                <tr>
                     <td class="portfolio-item">
                         <div class="portfolio-item-content">
                             <h3>Collaborative Filtering System</h3>
@@ -258,6 +372,8 @@
                             </div>
                         </div>
                     </td>
+                </tr>
+                <tr>
                     <td class="portfolio-item">
                         <div class="portfolio-item-content">
                             <h3>Advanced SQL</h3>
@@ -348,8 +464,54 @@
                             </div>
                         </div>
                     </td>
-                </tr>
-                <tr>
+                    <td class="portfolio-item">
+                        <div class="portfolio-item-content">
+                            <h3>Conceptual Modeling</h3>
+                            <div class="short-description">
+                                <p class="short-description" data-i18n="komShort">Project modeling the auto repair service domain using OntoUML, 
+                                    UML, BPMN, and OCD diagrams. OntoUML captures core entities and the relationships between them, 
+                                    while BPMN maps concrete processes. The OCD showcases the system's workflow.
+                                </p>
+                                <ul class="short-description-points">
+                                    <li>OntoUML</li>
+                                    <li>BPMN</li>
+                                    <li>Modeling</li>
+                                </ul>
+                            </div>
+                            <div class="expanded-content">
+                                <p data-i18n="komLong1">
+                                    This project is centered around modeling the car repair service domain using various 
+                                    modeling languages, including OntoUML, UML, BPMN, and DEMO. The main goal was to design a comprehensive 
+                                    model of the domain, starting with the creation of an OntoUML diagram that identifies the 
+                                    core entities involved in the auto repair service and defines the relationships between them. 
+                                    The OntoUML model captures both the conceptual and structural aspects of the domain, providing a solid foundation for further analysis.
+                                </p>
+                                <p data-i18n="komLong2">
+                                    integrity constraints were defined using OCL (Object Constraint Language) to 
+                                    ensure the model’s consistency and correctness. The system automatically 
+                                    checked for potential antipatterns within the OntoUML model.
+                                </p>
+                                <p data-i18n="komLong3">
+                                    In addition to modeling the overall workflow, individual transactions were also modeled 
+                                    within the system using DEMO (Design & Engineering Methodology for Organizations). 
+                                    DEMO was used to capture the specific actions and interactions that occur in the system’s transactional processes, 
+                                    ensuring that these processes align with the defined business rules and organizational structure.
+                                </p>
+                                <p data-i18n="komLong4">
+                                    Finally, an OCD (Organization Conceptual Diagram) was created to represent the structure 
+                                    of the organization itself, outlining the roles, responsibilities, and relationships 
+                                    between different organizational entities. This diagram provided a clear and comprehensive view of the organizational hierarchy.
+                                </p>
+                                <p data-i18n="komLong5">
+                                    If you're interested in exploring the full details of the project, including all diagrams and models, feel free to check out the complete work.
+                                </p>
+                                <a href="bi-kom_jelinkry_semestralka.pdf" target="_blank" data-i18n="viewProjectLink">View the project</a>
+
+
+                            </div>
+                        </div>
+                    </td>
+                <tr>    
                     <td class="portfolio-item">
                         <div class="portfolio-item-content">
                             <h3>Excel Engine</h3>
@@ -440,53 +602,8 @@
                             </div>
                         </div>
                     </td>
-                    <td class="portfolio-item">
-                        <div class="portfolio-item-content">
-                            <h3>Conceptual Modeling</h3>
-                            <div class="short-description">
-                                <p class="short-description" data-i18n="komShort">Project modeling the auto repair service domain using OntoUML, 
-                                    UML, BPMN, and OCD diagrams. OntoUML captures core entities and the relationships between them, 
-                                    while BPMN maps concrete processes. The OCD showcases the system's workflow.
-                                </p>
-                                <ul class="short-description-points">
-                                    <li>OntoUML</li>
-                                    <li>BPMN</li>
-                                    <li>Modeling</li>
-                                </ul>
-                            </div>
-                            <div class="expanded-content">
-                                <p data-i18n="komLong1">
-                                    This project is centered around modeling the car repair service domain using various 
-                                    modeling languages, including OntoUML, UML, BPMN, and DEMO. The main goal was to design a comprehensive 
-                                    model of the domain, starting with the creation of an OntoUML diagram that identifies the 
-                                    core entities involved in the auto repair service and defines the relationships between them. 
-                                    The OntoUML model captures both the conceptual and structural aspects of the domain, providing a solid foundation for further analysis.
-                                </p>
-                                <p data-i18n="komLong2">
-                                    integrity constraints were defined using OCL (Object Constraint Language) to 
-                                    ensure the model’s consistency and correctness. The system automatically 
-                                    checked for potential antipatterns within the OntoUML model.
-                                </p>
-                                <p data-i18n="komLong3">
-                                    In addition to modeling the overall workflow, individual transactions were also modeled 
-                                    within the system using DEMO (Design & Engineering Methodology for Organizations). 
-                                    DEMO was used to capture the specific actions and interactions that occur in the system’s transactional processes, 
-                                    ensuring that these processes align with the defined business rules and organizational structure.
-                                </p>
-                                <p data-i18n="komLong4">
-                                    Finally, an OCD (Organization Conceptual Diagram) was created to represent the structure 
-                                    of the organization itself, outlining the roles, responsibilities, and relationships 
-                                    between different organizational entities. This diagram provided a clear and comprehensive view of the organizational hierarchy.
-                                </p>
-                                <p data-i18n="komLong5">
-                                    If you're interested in exploring the full details of the project, including all diagrams and models, feel free to check out the complete work.
-                                </p>
-                                <a href="bi-kom_jelinkry_semestralka.pdf" target="_blank" data-i18n="viewProjectLink">View the project</a>
-
-
-                            </div>
-                        </div>
-                    </td>
+                <tr>
+                    
                 </tr>
             </table>
         </div>
