@@ -1,9 +1,11 @@
 <script setup lang="ts">
-  import Navbar from './components/Navbar.vue';
+  import HeroSection from './components/HeroSection.vue';
+import Navbar from './components/Navbar.vue';
 </script>
 
 <template>
   <Navbar></Navbar>
+  <HeroSection></HeroSection>
 
   
   <div class="tmp-content">

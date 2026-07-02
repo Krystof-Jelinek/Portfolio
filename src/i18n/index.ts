@@ -2,12 +2,17 @@ import { createI18n } from 'vue-i18n'
 import navbarCz from './cz/navbar'
 import navbarEn from './en/navbar'
 
+import heroEn from './en/hero'
+import heroCz from './cz/hero'
+
 const messages = {
   en: {
-    navbar: navbarEn
+    navbar: navbarEn,
+    hero: heroEn,
   },
   cz: {
-    navbar: navbarCz
+    navbar: navbarCz,
+    hero: heroCz,
   },
 }
 
