@@ -1,11 +1,13 @@
 <script setup lang="ts">
-const emit = defineEmits<{
-  languageChanged: [language: string]
-}>()
+  import { useI18n } from 'vue-i18n'
+  type Language = 'en' | 'cz'
+  const { locale } = useI18n()
 
-const setLanguage = (language: string) => {
-  emit('languageChanged', language)
+  const setLanguage = (language: Language) => {
+    locale.value = language
 }
+
+
 </script>
 
 <template>

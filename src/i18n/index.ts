@@ -1,0 +1,19 @@
+import { createI18n } from 'vue-i18n'
+import navbarCz from './cz/navbar'
+import navbarEn from './en/navbar'
+
+const messages = {
+  en: {
+    navbar: navbarEn
+  },
+  cz: {
+    navbar: navbarCz
+  },
+}
+
+export const i18n = createI18n({
+  legacy: false,
+  locale: 'en',
+  fallbackLocale: 'en',
+  messages,
+})

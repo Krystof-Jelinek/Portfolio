@@ -1,25 +1,28 @@
 <script setup lang="ts">
 
+    import { useI18n } from 'vue-i18n';
     import LanguageSwitch from './LanguageSwitch.vue';
-
+    const { t } = useI18n()
+    
     const menuItems = [
     {
-        text: 'About Me',
+        key: 'about',
         href: '#about',
     },
     {
-        text: 'Portfolio',
+        key: 'portfolio',
         href: '#portfolio',
     },
     {
-        text: 'CV',
+        key: 'cv',
         href: '#cv',
     },
     {
-        text: 'Contact',
+        key: 'contact',
         href: '#contact',
     },
     ]
+
 </script>
 
 <template>
@@ -34,11 +37,11 @@
         :key="item.href"
       >
         <a :href="item.href">
-          {{ item.text }}
+            {{ t(`navbar.${item.key}`) }}
         </a>
       </li>
     </ul>
-
+    
     <LanguageSwitch></LanguageSwitch>
   </nav>
 </template>
