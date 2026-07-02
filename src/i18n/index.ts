@@ -5,14 +5,19 @@ import navbarEn from './en/navbar'
 import heroEn from './en/hero'
 import heroCz from './cz/hero'
 
+import aboutEn from './en/about'
+import aboutCz from './cz/about'
+
 const messages = {
   en: {
     navbar: navbarEn,
     hero: heroEn,
+    about: aboutEn,
   },
   cz: {
     navbar: navbarCz,
     hero: heroCz,
+    about: aboutCz,
   },
 }
 

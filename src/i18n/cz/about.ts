@@ -1,0 +1,5 @@
+export default {
+    title: 'O mně',
+
+    text: `Jmenuji se Kryštof Jelínek a v současnosti jsem ve třetím ročníku studia na Fakultě informačních technologií Českého vysokého učení technického v Praze, kde studuji obor softwarové inženýrství. Moje portfolio obsahuje primárně projekty v jazycích Java, C++, Kotlin a Python, dále také projekty související s databázemi a konceptuálním modelováním. Tyto projekty jsou nedílnou součástí mého akademického studia a současně odrážejí mé osobní zájmy. Plánuji absolvovat v roce 2026 a v současnosti hledám pracovní příležitosti, které mi nabídnou praktické zkušenosti v oblasti softwarového inženýrství, stejně jako podporu při vypracování bakalářské práce. Vždy se těším na nové výzvy, které mi umožní růst a rozvíjet mé dovednosti (nejen) v oblasti vývoje softwaru.`
+}
