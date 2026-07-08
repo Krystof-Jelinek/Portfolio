@@ -1,0 +1,8 @@
+export default{
+    scraperShort: "Profesionální automatizační platforma vyvinutá pro společnost Atos, zahrnující pokročilý web scraping, synchronizaci dat v reálném čase a robustní vrstvu pro persistenci dat.",
+    scraperLong1: "Během tohoto projektu ve společnosti Atos jsem byl zodpovědný za kompletní architektonickou revizi systému pro automatizaci webu. To zahrnovalo rozsáhlý refaktoring z funkcionálního přístupu na striktní objektově orientovaný model (OOP), což výrazně zlepšilo udržovatelnost a škálovatelnost.",
+    scraperLong2: "Technické jádro využívá Python s knihovnou Playwright pro vysoce výkonný web scraping a extrakci dat. Pro zajištění spolehlivé persistence dat jsem implementoval systém automatizované správy s využitím nástroje Alembic pro databázové migrace a vlastní skripty pro periodické čištění databáze, což zajišťuje optimalizaci systému odstraňováním zastaralých dat.",
+    scraperLong3: "Na frontendu jsem vyvíjel a refaktoroval komponenty v Reactu a integroval WebSockety, které uživatelům poskytují dynamické aktualizace dat v reálném čase bez nutnosti obnovovat stránku. Také jsem spravoval a aktualizoval REST API, aby byla zajištěna bezproblémová komunikace mezi scraping enginem a uživatelským rozhraním.",
+    scraperLong4: "Kromě vývoje jsem se podílel na návrhu UI/UX a vytvořil intuitivní rozhraní pro monitorování automatizovaných úloh. Moje role zahrnovala zajištění persistence dat v průběhu celého životního cyklu procesu scrapingu a udržování celkové stability produkčního prostředí.",
+    scraperNDA: "Vzhledem k dohodě o mlčenlivosti (NDA) nemohu k tomuto projektu poskytnout další technickou dokumentaci ani zdrojový kód.",
+}

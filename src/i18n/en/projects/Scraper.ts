@@ -1,0 +1,8 @@
+export default{
+    scraperShort: "Professional automation platform developed for Atos, featuring advanced web scraping, real-time data synchronization, and a robust data persistence layer.",
+    scraperLong1: "During this professional engagement at Atos, I was responsible for the complete architectural overhaul of a web automation system. This included a large-scale refactoring of the codebase from a functional approach to a strict Object-Oriented Programming (OOP) model, significantly improving maintainability and scalability.",
+    scraperLong2: "The technical core utilizes Python with Playwright for high-performance web scraping and data extraction. To ensure reliable data persistence, I implemented an automated management system using Alembic for database migrations and custom scripts for periodic database cleaning, ensuring the system remains optimized by removing legacy data.",
+    scraperLong3: "On the frontend, I developed and refactored components in React, integrating WebSockets to provide users with dynamic, real-time data updates without page refreshes. I also managed and updated REST APIs to ensure seamless communication between the scraping engine and the user interface.",
+    scraperLong4: "Beyond development, I contributed to the UI/UX design, creating an intuitive interface for monitoring automated tasks. My role involved ensuring data persistence across the entire lifecycle of the scraping process and maintaining the overall stability of the production environment.",
+    scraperNDA: "Due to a Non-Disclosure Agreement (NDA), I cannot provide further technical documentation or source code for this project.",
+}

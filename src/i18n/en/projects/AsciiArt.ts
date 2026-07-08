@@ -1,0 +1,9 @@
+export default{
+    asciiShort: "A modular Scala application that converts different image formats into ASCII art, featuring customizable filters and clean command line interface. Designed with a strong focus on expandability and object-oriented principles for maintainable, extensible code.",
+    asciiLong1: "As a part of my studies I developed a modular, highly scalable Scala application designed with an emphasis on clean architecture and extensibility. The system's design leverages object-oriented principles to create a flexible and maintainable codebase that easily accommodates future modifications and new features.",
+    asciiLong2: "The smooth flow of the application is largely driven by its modular structure, which enables seamless integration of different image formats and conversion methods without disrupting the overall system. The design facilitates the easy addition of new filters and features, ensuring the app can evolve alongside user needs.",
+    asciiLong3: "A robust and flexible command-handling system was integrated to decouple logic from user interaction, enhancing both maintainability and user experience. The application’s architecture prioritizes reusability and simplicity, ensuring that every component is independent and reusable in other projects or use cases.",
+    asciiLong4: "This design-centric approach ensures the system remains easy to scale, modify, and maintain, laying a solid foundation for long-term use while promoting efficient development practices.",
+    asciiLong5: "Here’s an example of the app in action. You can clone the repository and explore the full functionality for yourself.",
+    asciiLong6: "Check out the project on GitHub:",
+}

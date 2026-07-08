@@ -1,0 +1,9 @@
+export default{
+    asciiShort: "Modulární aplikace v jazyce Scala která převádí různé formáty obrázků do ASCII artu, nabízí přizpůsobitelné filtry a uživatelské rozhraní v příkazovém řádku. Byla navržena s důrazem na objektově orientované principy pro udržovatelnost a rozšiřitelnost.",
+    asciiLong1: "V rámci svých studií jsem vytvořil modulární, vysoce škálovatelnou aplikaci v jazyce Scala, navrženou s důrazem na architekturu a rozšiřitelnost. Design systému využívá objektově orientované principy k vytvoření flexibilního a udržitelného kódu, který snadno umožňuje budoucí změny a přidávání nových funkcí.",
+    asciiLong2: "Plynulý chod aplikace je do značné míry zajištěn její strukturou, která umožňuje bezproblémovou integraci různých formátů obrázků a metod konverze, aniž by došlo k narušení celkového běhu aplikace. Design usnadňuje jednoduché přidávání nových filtrů a funkcí, což zajišťuje, že aplikace může růst a vyvíjet se podle potřeb uživatelů.",
+    asciiLong3: "Byl implementován robustní a flexibilní systém pro zpracování příkazů, který odděluje logiku aplikace od interakce s uživatelem, čímž zlepšuje údržbu i uživatelskou zkušenost. Architektura aplikace upřednostňuje znovupoužitelnost a jednoduchost, což zajišťuje, že každý komponent je nezávislý a znovupoužitelný v jiných projektech nebo scénářích.",
+    asciiLong4: "Tento přístup zajišťuje, že systém zůstává snadno škálovatelný, modifikovatelný a udržovatelný, čímž vytváří pevný základ pro dlouhodobé použití a podporuje efektivní vývojové praktiky.",
+    asciiLong5: "Zde je ukázka aplikace v akci. Samozřejmě si můžete repozitář stáhnout a aplikaci si sami vyzkoušet.",
+    asciiLong6: "Odkaz na GitHub projektu:",
+}
