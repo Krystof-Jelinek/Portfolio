@@ -1,0 +1,12 @@
+export default{
+    tetrisShort: "A high-performance Python implementation of Tetris featuring LAN multiplayer and a modular ability system. The project focuses on clean architecture, asynchronous networking, and software quality standards.",
+    tetrisLong1: "This project is an advanced Tetris application developed using Python and the Pyglet library for high-performance graphics rendering and input handling. The primary goal was to go beyond basic gameplay by creating a robust, extensible engine built on Object-Oriented Programming (OOP) principles, ensuring a strict separation between game logic, networking, and the user interface.",
+    tetrisLong2: "The standout feature is the LAN multiplayer mode, allowing players to compete in real-time via socket communication. To enhance gameplay depth, I implemented a 'Modular Ability System.' This architecture allows for the seamless integration of unique player abilities and offensive modifiers (attacks) without altering the core engine, utilizing design patterns to maintain scalability.",
+    tetrisExampleText: "Above is a preview of the game in action, showcasing the multiplayer interface and the active ability system. The clean UI is rendered efficiently using Pyglet's batch drawing capabilities.",
+    tetrisLong3: "Code quality and stability were central to the development process. The project incorporates a comprehensive suite of unit tests using the Pytest framework, covering critical components like line-clearance logic and network packet synchronization. To ensure maintainability and professional standards, the entire codebase adheres to a strict codestyle enforced by Pylint.",
+    tetrisLong4: "The system's modularity ensures that components such as the network handler, game state manager, and UI renderer are decoupled. This structure not only facilitates easier debugging but also allows for future expansions, such as new game modes or alternative rendering backends.",
+    tetrisLong5: "If you want to try out the gameplay you can download the prepared exe file for windows here:",
+    tetrisLong6: "If you're interested in exploring the technical architecture, the implementation of the ability system, or the networking protocols or you just want to play the game, feel free to check out the full source code and documentation.",
+    Download: "Download",
+    viewProjectLink: "View the project",
+}

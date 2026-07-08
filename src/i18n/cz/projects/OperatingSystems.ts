@@ -1,0 +1,7 @@
+export default{
+    osProjectsShort: "Úkoly zaměřené na základní principy operačních systémů, jako je synchronizace vláken a návrh souborového systému. Hlavní pozornost je věnována řešení klasických problémů, například producent-konzument, a tvorbě vlastního souborového systému inspirovaného architekturou FAT.",
+    osProjectsLong1: "Tato sada projektů se věnuje pokročilým tématům operačních systémů formou praktických úkolů v C++. První projekt řešil synchronizaci vláken a implementaci klasického problému producent-konzument. Bylo potřeba pečlivě řídit vlákna a synchronizační nástroje, aby byla zajištěna bezpečná a efektivní výměna dat, což ukazuje dobré porozumění problematice paralelního zpracování.",
+    osProjectsLong2: "Druhý projekt spočíval v návrhu a implementaci jednoduchého vlastního souborového systému, který byl modelován podobně jako architektura FAT. Úkolem bylo vytvořit funkční rozhraní pro správu souborů včetně alokačních tabulek a metadat, což předvedlo praktické znalosti nízkoúrovňového programování a fungování souborových systémů.",
+    osProjectsLong3: "Práce na těchto projektech mi pomohla zlepšit schopnosti řešit problémy a lépe pochopit základní principy operačních systémů. Díky praktickému využití programování v C++ jsem získal cenné zkušenosti, které doufám využiju při další práci na systémovém softwaru.",
+    osProjectsLong4: "Pro více informací a ke shlédnutí zdrojového kódu můžete navštívit můj GitHub repozitář.",
+}

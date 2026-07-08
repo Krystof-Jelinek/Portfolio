@@ -6,6 +6,13 @@ import AkrmatProject from './projects/AkrmatProject.vue';
 import AsciiArtProject from './projects/AsciiArtProject.vue';
 import TetrisProject from './projects/TetrisProject.vue';
 import WebAutomation from './projects/WebAutomation.vue';
+import CarRentProject from './projects/CarRentProject.vue';
+import CollaborativeFilteringProject from './projects/CollaborativeFilteringProject.vue';
+import AdvancedSqlProject from './projects/AdvancedSqlProject.vue';
+import AIProjects from './projects/AIProjects.vue';
+import ConceptualModelingProject from './projects/ConceptualModelingProject.vue';
+import ExcelEngineProject from './projects/ExcelEngineProject.vue';
+import OperatingSystemsProject from './projects/OperatingSystemsProject.vue';
 
 const { t } = useI18n();
 
@@ -15,7 +22,14 @@ const projects = [
   AkrmatProject,
   WebAutomation,
   AsciiArtProject,
-  TetrisProject
+  TetrisProject,
+  CarRentProject,
+  CollaborativeFilteringProject,
+  AdvancedSqlProject,
+  AIProjects,
+  ConceptualModelingProject,
+  ExcelEngineProject,
+  OperatingSystemsProject,
 ];
 </script>
 

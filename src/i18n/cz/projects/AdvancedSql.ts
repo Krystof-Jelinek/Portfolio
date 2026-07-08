@@ -1,0 +1,6 @@
+export default{
+    sqlShort: "Sada úkolů zaměřených na PLSQL a PgPLSQL, pokrývající balíčky, procedury, triggery, rekurzi a optimalizaci vykonávacího plánu. Hlavní důraz je kladen na PostgreSQL, ale kolekce také zahrnuje sekce specifické pro Oracle.",
+    sqlLong1: "Tato kolekce úkolů se zaměřuje na pokročilé SQL koncepty a praktiky, s důrazem na PLSQL a PgPLSQL. Pokrývá širokou škálu témat, včetně vytváření a správy triggerů, použití I/O balíčků pro zpracování dat, optimalizace vykonávacího plánu a implementace SQL rekurze pro složité datové dotazy.",
+    sqlLong2: "Hlavní důraz je kladen na PostgreSQL, ale úkoly také obsahují sekce zkoumající funkce specifické pro Oracle, čímž poskytují ucelený pohled na databázové programování. Každý úkol je navržen tak, aby zlepšil praktické dovednosti a porozumění pokročilým SQL funkcionalitám.",
+    sqlLong3: "Pokud byste se chtěli podívat na celý soubor úkolů, včetně konkrétních implementací a příkladů, navštívit můj GitHub repository. Tam najdete všechny materiály včetně zdrojových kódů.",
+}

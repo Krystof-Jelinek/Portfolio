@@ -1,0 +1,7 @@
+export default{
+    osProjectsShort: "Assignments focusing on core OS concepts such as multithreading synchronization and file system design. Main emphasis on implementations of classical problems like producer-consumer, and the creation of a custom file system inspired by the FAT architecture.",
+    osProjectsLong1: "This collection covers advanced operating systems topics through hands-on projects in C++. The first project tackled multithreading synchronization, implementing a classical producer-consumer problem. The solution required careful management of threads and synchronization primitives to ensure safe and efficient data exchange, demonstrating solid understanding of concurrency control.",
+    osProjectsLong2: "The second project involved designing and implementing a simplified custom file system modeled similarly to the FAT architecture. This task required creating a working interface for file management, including allocation tables and file metadata handling, showcasing practical skills in low-level systems programming and file system internals.",
+    osProjectsLong3: "Working on these projects helped me develop stronger problem-solving skills and a deeper understanding of essential OS concepts. Through practical application of C++ coding techniques, I gained valuable experience that I hope will be useful in future system-level development.",
+    osProjectsLong4: "For more details and to explore the source code, you can visit my GitHub repository.",
+}

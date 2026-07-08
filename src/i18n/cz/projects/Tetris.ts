@@ -1,0 +1,12 @@
+export default{
+    tetrisShort: "Výkonná implementace Tetrisu v Pythonu s LAN multiplayerem a modulárním systémem schopností. Projekt se zaměřuje na čistou architekturu, asynchronní síťovou komunikaci a dodržení vysoké kvality softwaru.",
+    tetrisLong1: "Tento projekt je pokročilá aplikace Tetrisu vyvinutá v Pythonu s využitím knihovny Pyglet pro vysoce výkonné vykreslování grafiky a zpracování vstupů. Primárním cílem bylo jít nad rámec základní hratelnosti vytvořením robustního, rozšiřitelného enginu postaveného na principech objektově orientovaného programování (OOP), což zajišťuje striktní oddělení herní logiky, síťové komunikace a uživatelského rozhraní.",
+    tetrisLong2: "Klíčovým prvkem je režim LAN multiplayeru, který umožňuje hráčům soupeřit v reálném čase prostřednictvím socketové komunikace. Pro zpestření hratelnosti jsem implementoval modulární systém schopností. Tato architektura umožňuje bezproblémovou integraci unikátních hráčských schopností a útočných modifikátorů (útoků) bez zásahu do jádra enginu, přičemž využívá návrhové vzory pro zachování rozšiřitelnosti a škálovatelnosti.",
+    tetrisExampleText: "Výše je náhled hry v akci, který ukazuje rozhraní pro více hráčů a aktivní systém schopností. Uživatelské rozhraní je efektivně vykreslováno pomocí batch drawing v knihovně Pyglet.",
+    tetrisLong3: "Kvalita kódu a stabilita byly ústředním bodem vývojového procesu. Projekt obsahuje sadu unit testů s využitím frameworku Pytest, které pokrývají kritické komponenty, jako je logika odstraňování řádků a synchronizace síťových paketů. Pro zajištění udržitelnosti a standardů celý kód dodržuje přísný styl (codestyle) kontrolovaný nástrojem Pylint.",
+    tetrisLong4: "Modularita systému zajišťuje, že komponenty jako síťový handler, správce stavu hry a renderer UI jsou oddělené. Tato struktura nejen usnadňuje ladění, ale také umožňuje budoucí rozšíření, jako jsou nové herní režimy nebo alternativní vykreslovací backendy.",
+    tetrisLong5: "Pokud si chcete vyzkoušet hru, můžete si stáhnout připravený .exe soubor pro Windows zde:",
+    tetrisLong6: "Pokud vás zajímá technická architektura, implementace systému schopností, síťové protokoly, nebo si jen chcete hru zahrát, neváhejte si prohlédnout kompletní zdrojový kód a dokumentaci.",
+    Download: "Stáhnout",
+    viewProjectLink: "Zobrazit projekt",
+}

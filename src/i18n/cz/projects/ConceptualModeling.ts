@@ -1,0 +1,9 @@
+export default{
+    komShort: "Projekt modelující doménu autoservisních služeb pomocí OntoUML, UML, BPMN a OCD diagramů. OntoUML zachycuje klíčové entity a vztahy mezi nimi, BPMN mapuje konkrétní procesy. OCD zobrazuje celkovou strukturu systému.",
+    komLong1: "Tento projekt se zaměřuje na modelování domény autoservisu pomocí různých modelovacích jazyků, včetně OntoUML, UML, BPMN a DEMO. Hlavním cílem bylo navrhnout komplexní model této domény, počínaje vytvořením OntoUML diagramu, který identifikuje klíčové entity zapojené do autoservisních služeb a definuje vztahy mezi nimi. OntoUML model zachycuje jak koncepční, tak strukturální aspekty domény a poskytuje pevný základ pro další analýzu.",
+    komLong2: "Integritní omezení byla definována pomocí OCL (Object Constraint Language), aby byla zajištěna konzistence a správnost modelu. Systém automaticky zkontroloval potenciální antipatterny v rámci OntoUML modelu.",
+    komLong3: "Kromě modelování celkového pracovního postupu byly jednotlivé transakce také modelovány v rámci systému pomocí DEMO (Design & Engineering Methodology for Organizations). DEMO bylo použito k zachycení specifických akcí a interakcí, které se vyskytují v transakčních procesech systému, čímž se zajistilo, že tyto procesy jsou v souladu s definovanými obchodními pravidly a organizační strukturou.",
+    komLong4: "Nakonec byl vytvořen OCD (Organizační koncepční diagram), který reprezentuje strukturu samotné organizace, vymezuje role, odpovědnosti a vztahy mezi různými organizačními entitami. Tento diagram poskytl jasný a komplexní pohled na organizační hierarchii.",
+    komLong5: "Pokud máte zájem o prozkoumání kompletních detailů projektu, včetně všech diagramů a modelů, neváhejte se podívat na celou práci.",
+    viewProjectLink: "Zobrazit projekt",
+}

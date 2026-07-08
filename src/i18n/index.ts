@@ -20,6 +20,30 @@ import ScraperProjectCz from './cz/projects/Scraper'
 import AsciiArtEn from './en/projects/AsciiArt'
 import AsciiArtCz from './cz/projects/AsciiArt'
 
+import TetrisEn from './en/projects/Tetris'
+import TetrisCz from './cz/projects/Tetris'
+
+import CarRentEn from './en/projects/CarRent'
+import CarRentCz from './cz/projects/CarRent'
+
+import CollaborativeFilteringEn from './en/projects/CollaborativeFiltering'
+import CollaborativeFilteringCz from './cz/projects/CollaborativeFiltering'
+
+import AdvancedSqlEn from './en/projects/AdvancedSql'
+import AdvancedSqlCz from './cz/projects/AdvancedSql'
+
+import AIProjectsEn from './en/projects/AIProjects'
+import AIProjectsCz from './cz/projects/AIProjects'
+
+import ConceptualModelingEn from './en/projects/ConceptualModeling'
+import ConceptualModelingCz from './cz/projects/ConceptualModeling'
+
+import ExcelEngineEn from './en/projects/ExcelEngine'
+import ExcelEngineCz from './cz/projects/ExcelEngine'
+
+import OperatingSystemsEn from './en/projects/OperatingSystems'
+import OperatingSystemsCz from './cz/projects/OperatingSystems'
+
 const messages = {
   en: {
     navbar: navbarEn,
@@ -29,6 +53,14 @@ const messages = {
     akrmat: AkrmatProjectEn,
     scraper: ScraperProjectEn,
     asciiArt: AsciiArtEn,
+    tetris: TetrisEn,
+    car: CarRentEn,
+    cf: CollaborativeFilteringEn,
+    sql: AdvancedSqlEn,
+    ai: AIProjectsEn,
+    kom: ConceptualModelingEn,
+    excel: ExcelEngineEn,
+    os: OperatingSystemsEn,
   },
   cz: {
     navbar: navbarCz,
@@ -38,6 +70,14 @@ const messages = {
     akrmat: AkrmatProjectCz,
     scraper: ScraperProjectCz,
     asciiArt: AsciiArtCz,
+    tetris: TetrisCz,
+    car: CarRentCz,
+    cf: CollaborativeFilteringCz,
+    sql: AdvancedSqlCz,
+    ai: AIProjectsCz,
+    kom: ConceptualModelingCz,
+    excel: ExcelEngineCz,
+    os: OperatingSystemsCz,
   },
 }
 

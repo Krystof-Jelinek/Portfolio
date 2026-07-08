@@ -1,0 +1,9 @@
+export default{
+    carShort: "Spring Boot Java aplikace s REST API, integrací ORM a databáze Azure. Vytvořeno během 3. semestru, obsahující kompletní CRUD operace a vlastní implementaci front-endu. Využívá třívrstvou architekturu, která zajišťuje jasné oddělení zodpovědností.",
+    carLong1: "Tento projekt je robustní, třívrstvá Java aplikace postavená na frameworku Spring Boot, navržená pro správu operací s půjčováním aut, přičemž je napojena na Azure databázi. Aplikace využívá modulární architekturu s jasným oddělením jednotlivých vrstev, což zajišťuje udržitelnost a škálovatelnost.",
+    carLong2: "Backend je postaven na Spring Bootu, využívající REST API pro komunikaci s frontendem. Aplikace je plně propojena s databází Azure, přičemž složité SQL dotazy jsou vykonávány pomocí anotací Spring Data JPA. Integritní omezení jsou uplatněna k zajištění konzistence databáze, což přispívá k celkové spolehlivosti aplikace.",
+    carLong3: "Frontend, vyvinutý jako samostatná aplikace, komunikuje s backendem prostřednictvím RESTful služeb, což uživatelům poskytuje dynamické a responzivní rozhraní. Jak frontend, tak backend jsou navrženy tak, aby spolupracovaly a nabízely hladkou uživatelskou zkušenost.",
+    carLong4: "Aplikace také využívá Gradle jako nástroj pro automatizaci buildů, což zajišťuje efektivní vývojový proces. Plně nakonfigurovaný Dockerfile pro backend i frontend jsou součástí projektu, což usnadňuje nasazení a spuštění aplikace v jakémkoli prostředí. Pro testování projekt používá Mockito pro simulování závislostí a zajištění spolehlivosti jednotlivých komponent.",
+    carLong5: "Dále projekt využívá Swagger UI pro automatickou generaci dokumentace API, což poskytuje vývojářům aktuální, interaktivní rozhraní pro testování a porozumění API endpointům.",
+    carLong6: "Podívejte se na projekt na GitHubu:",
+}

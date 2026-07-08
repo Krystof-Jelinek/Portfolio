@@ -1,0 +1,9 @@
+export default{
+    excelShort: "Tento projekt implementuje engine pro tabulkový procesor, který simuluje chování tabulky (např. v Excelu nebo Google Sheets) pomocí objektově orientovaného přístupu v C++. Klíčovým prvkem řešení je použití dědičnosti a polymorfismu.",
+    excelLong1: "Tento projekt implementuje výkonný tabulkový engine, který simuluje chování tabulky podobně jako nástroje jako Excel nebo Google Sheets. Aplikace je postavena v C++ a zaměřuje se na přesné zpracování buněk, vzorců a detekci cyklických závislostí mezi nimi. Je navržena s objektově orientovaným přístupem, využívající dědičnost a polymorfismus k modelování různých typů buněk a operací, které je možné na nich provádět. Hlavní funkcionalita se zaměřuje na:",
+    excelLong2: "Každá buňka v tabulce může obsahovat různé typy dat, včetně statických hodnot (například čísla nebo text) nebo dynamického obsahu (vzorců, které odkazují na jiné buňky).",
+    excelLong3: "Procesor dokáže analyzovat a počítat vzorce pomocí sofistikovaného abstraktního syntaktického stromu (AST), který je uložen v každé buňce. To umožňuje efektivnější a přesnější vyhodnocení výsledků vzorců.",
+    excelLong4: "Jednou z klíčových funkcí tohoto enginu je schopnost detekovat a spravovat cyklické závislosti mezi buňkami. To zajišťuje, že procesor nevstoupí do nekonečné smyčky, když vzorec závisí na hodnotě buňky, která zase závisí na původní buňce.",
+    excelLong5: "Engine využívá externí parser pro zpracování vzorců, čímž zajišťuje plynulý a flexibilní způsob čtení a zpracování uživatelsky definovaných vzorců.",
+    excelLong6: "Bohužel nemohu poskytnout veřejný odkaz na tento projekt, protože je součástí mé akademické práce. Toto omezení je zavedeno, aby se předešlo případnému zneužití nebo plagiátorství, což zajišťuje integritu projektu a jeho originalitu. Pokud máte zájem, neváhejte mě kontaktovat a mohu vám projekt zpřístupnit na požádání.",
+}

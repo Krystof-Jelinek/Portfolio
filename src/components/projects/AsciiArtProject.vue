@@ -13,15 +13,20 @@ const { t } = useI18n();
   >
     <p>{{ t('asciiArt.asciiLong1') }}</p>
     <p>{{ t('asciiArt.asciiLong2') }}</p>
+    <p>{{ t('asciiArt.asciiLong3') }}</p>
+    <p>{{ t('asciiArt.asciiLong4') }}</p>
     
     <div class="app-example">
-      <img src="../../assets/Tetris.png" alt="Tetris Gameplay" style="max-width: 100%; border-radius: 8px;">
-      <p>{{ t('tetrisExampleText') }}</p>
+      <img src="../../assets/AsciiResult.png" alt="Tetris Gameplay" style="max-width: 100%; border-radius: 8px;">
+      <p>{{ t('asciiArt.asciiLong5') }}</p>
     </div>
 
-    <p>{{ t('tetrisLong3') }}</p>
-    <a href="https://github.com/Krystof-Jelinek/Advanced_Tetris" target="_blank">
-      {{ t('viewProjectLink') }}
-    </a>
+    <p>
+      <span>
+          {{ t('asciiArt.asciiLong6') }}
+      </span>
+      <br>
+      <a href="https://github.com/Krystof-Jelinek/AsciiArtApp" target="_blank">AsciiArtApp</a>
+    </p>
   </ProjectCard>
 </template>

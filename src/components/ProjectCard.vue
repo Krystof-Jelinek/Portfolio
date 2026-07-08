@@ -183,6 +183,19 @@ h3 {
     line-height: 1.6;
 }
 
+/* Zde přidej stylování pro odkaz ve slotu */
+:deep(.expanded-content a) {
+    color: #00ABE4; /* Tvoje primární modrá barva */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+:deep(.expanded-content a:hover) {
+    text-decoration: underline;
+    color: #0089b5; /* Trochu tmavší odstín při najetí */
+}
+
 /* Vue :deep() selektory - nutné, protože HTML ze slotu se vkládá zvenčí */
 :deep(.expanded-content p){
     color: #333;

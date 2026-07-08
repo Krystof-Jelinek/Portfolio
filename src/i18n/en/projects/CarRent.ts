@@ -1,0 +1,9 @@
+export default{
+    carShort: "A Spring Boot Java application with REST API, ORM, and Azure database integration. Built during the 3rd semester, featuring full CRUD operations and custom frontend implementation. Designed with a 3-layer architecture, ensuring a clear separation of concerns.",
+    carLong1: "This project is a robust, three-layer Java application built using Spring Boot, designed to handle car rental operations with integration to an Azure database. The application implements a clean, modular architecture with a clear separation of concerns, adhering to the principles of maintainability and scalability.",
+    carLong2: "The backend is powered by Spring Boot, utilizing REST APIs to enable communication with the frontend. The application is fully connected to an Azure database, with complex SQL queries executed through Spring Data JPA annotations. Integrity constraints are enforced to ensure the consistency of the database, contributing to the overall reliability of the application.",
+    carLong3: "The frontend, developed as a separate application, communicates with the backend via RESTful services, providing users with a dynamic and responsive interface. Both frontend and backend are designed to work together, offering a smooth user experience.",
+    carLong4: "The application also leverages Gradle as the build automation tool, ensuring a streamlined development process. A fully configured Dockerfiles are included for both backend and frontend, making it easy to deploy and run the application in any environment.For testing, the project incorporates Mockito to mock dependencies and ensure the reliability of individual components.",
+    carLong5: "Additionally, the project utilizes Swagger UI for automatic API documentation generation, providing developers with an up-to-date, interactive interface for testing and understanding the API endpoints.",
+    carLong6: "Check out the project on GitHub:",
+}

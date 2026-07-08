@@ -1,0 +1,6 @@
+export default{
+    sqlShort: "Collection of assignments focusing on PLSQL and PgPLSQL, covering packages, procedures, triggers, recursion, and execution plan optimization. Main emphasis is on PostgreSQL, but the collection also includes sections that explore Oracle-specific implementations.",
+    sqlLong1: "This collection of assignments delves into advanced SQL concepts and practices, focusing on PLSQL and PgPLSQL. It encompasses a range of topics, including the creation and management of triggers, the use of I/O packages for data processing, execution plan optimization, and the implementation of SQL recursion for complex data queries.",
+    sqlLong2: "While the primary emphasis is on PostgreSQL, the assignments also include sections exploring Oracle-specific features, providing a well-rounded perspective on database programming. Each task is designed to enhance practical skills and a deep understanding of advanced SQL functionalities.",
+    sqlLong3: "If you'd like to explore the full set of assignments, including detailed implementations and examples, feel free to visit my GitHub repository. There, you’ll find all the materials and source code.",
+}

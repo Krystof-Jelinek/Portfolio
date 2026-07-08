@@ -1,0 +1,9 @@
+export default{
+    komShort: "Project modeling the car repair service domain using OntoUML, UML, BPMN, and OCD diagrams. OntoUML captures core entities and the relationships between them, while BPMN maps concrete processes. The OCD showcases the system's workflow.",
+    komLong1: "This project is centered around modeling the car repair service domain using various modeling languages, including OntoUML, UML, BPMN, and DEMO. The main goal was to design a comprehensive model of the domain, starting with the creation of an OntoUML diagram that identifies the core entities involved in the auto repair service and defines the relationships between them. The OntoUML model captures both the conceptual and structural aspects of the domain, providing a solid foundation for further analysis.",
+    komLong2: "integrity constraints were defined using OCL (Object Constraint Language) to ensure the model’s consistency and correctness. The system automatically checked for potential antipatterns within the OntoUML model.",
+    komLong3: "In addition to modeling the overall workflow, individual transactions were also modeled within the system using DEMO (Design & Engineering Methodology for Organizations). DEMO was used to capture the specific actions and interactions that occur in the system’s transactional processes, ensuring that these processes align with the defined business rules and organizational structure.",
+    komLong4: "Finally, an OCD (Organization Conceptual Diagram) was created to represent the structure of the organization itself, outlining the roles, responsibilities, and relationships between different organizational entities. This diagram provided a clear and comprehensive view of the organizational hierarchy.",
+    komLong5: "If you're interested in exploring the full details of the project, including all diagrams and models, feel free to check out the complete work.",
+    viewProjectLink: "View the project",
+}
