@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, watch, onMounted, onUnmounted} from 'vue';
 
 // Definujeme, co MUSÍ každá karta dostat (to, co je vždycky stejné)
 defineProps<{
@@ -10,20 +10,46 @@ defineProps<{
 
 const isOpen = ref(false);
 
+watch(isOpen, (open) => {
+  if (open) {
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    document.body.style.overflow = 'hidden';
+    document.body.style.paddingRight = `${scrollbarWidth}px`;
+  } else {
+    document.body.style.overflow = '';
+    document.body.style.paddingRight = '';
+  }
+});
+
 const toggleOpen = () => {
-  isOpen.value = !isOpen.value;
+    isOpen.value = !isOpen.value;
 };
+
+const handleEscape = (e: KeyboardEvent) => {
+  if (e.key === 'Escape') {
+    isOpen.value = false;
+  }
+};
+
+onMounted(() => {
+  window.addEventListener('keydown', handleEscape);
+});
+
+
+// odstranění listeneru při zničení komponenty
+onUnmounted(() => {
+  window.removeEventListener('keydown', handleEscape);
+});
+
 </script>
 
 <template>
   <div 
     class="portfolio-item" 
-    :class="{ open: isOpen }" 
     @click="toggleOpen"
   >
     <div class="portfolio-item-content">
       
-      <!-- 1. Fixní část (z props) -->
       <h3>{{ title }}</h3>
       
       <div class="short-description">
@@ -36,91 +62,91 @@ const toggleOpen = () => {
         </ul>
       </div>
 
-      <!-- 2. Flexibilní část (obsah slotu) -->
-      <!-- Používáme v-show, aby se obsah po zavření skryl, ale v DOMu zůstal -->
-      <div v-show="isOpen" class="expanded-content">
-        <!-- Všechno HTML, které napíšeš mezi <ProjectCard> a </ProjectCard>, se objeví přesně tady -->
-        <slot></slot> 
-      </div>
-
     </div>
   </div>
+
+
+  <div 
+    v-if="isOpen"
+    class="modal-overlay"
+    @click.self="toggleOpen"
+  >
+
+    <div class="modal-window">
+        <!-- Zavírací tlačítko -->
+        <button 
+            class="close-button"
+            @click="toggleOpen"
+        >
+            ×
+        </button>
+
+
+        <div class="modal-content">
+            <h2 class="modal-title">
+                {{ title }}
+            </h2>
+
+            <div class="expanded-content">
+                <slot></slot>
+            </div>
+        </div>
+
+
+    </div>
+
+  </div>
+
 </template>
 
 <style scoped>
-    /* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
 /* 1. ZÁKLADNÍ KARTA PROJEKTU                           */
 /* ---------------------------------------------------- */
+
 .portfolio-item {
     background: #FFFFFF;
     padding: 1.5rem;
-    border-radius: 12px; /* Rounded corners for a smoother look */
+    border-radius: 12px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     cursor: pointer;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    box-shadow: 0 8px 20px rgba(0, 171, 228, 0.1); /* Soft shadow by default */
-    
-    /* Přidáno pro grid (nahrazuje starý table hack) */
-    width: 100%; 
+    transition: 
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 171, 228, 0.1);
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
+    display: flex;
 }
 
-/* Hover a Active efekty */
 .portfolio-item:hover {
-    transform: translateY(-8px); /* Lift the item up more */
-    box-shadow: 0 16px 40px rgba(0, 171, 228, 0.3); /* More prominent shadow on hover */
-    background-color: #F3F9FD; /* Light background color change on hover */
+    transform: translateY(-8px);
+    box-shadow: 
+        0 16px 40px rgba(0, 171, 228, 0.3);
+    background-color: #F3F9FD;
 }
 
 .portfolio-item:active {
-    transform: translateY(-4px); /* Slight downward movement on click */
-}
-
-.portfolio-item:focus-within {
-    box-shadow: 0 10px 30px rgba(0, 171, 228, 0.4); /* Stronger shadow on focus */
+    transform: translateY(-4px);
 }
 
 /* ---------------------------------------------------- */
-/* 2. OTEVŘENÁ KARTA (ROZKLIKNUTÁ)                      */
+/* 2. OBSAH KARTY                                       */
 /* ---------------------------------------------------- */
-.portfolio-item.open {
-    box-shadow: 0 10px 30px rgba(0, 171, 228, 0.5); /* Larger shadow */
-    z-index: 100;
-    
-    /* Vylepšené centrování pomocí fixed */
-    position: fixed; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.1); /* Center and zoom */
-    
-    max-width: 700px;
-    width: 90%; /* Aby se to nedotýkalo okrajů obrazovky */
-    max-height: 85vh; /* Zabrání přetečení okna prohlížeče */
-    overflow-y: auto; /* Přidá posuvník, pokud je text moc dlouhý */
-    background-color: #FFFFFF;
-}
 
-.portfolio-item.open:hover {
-    /* Zakázání hover posouvání, když je karta rozbalená uprostřed */
-    transform: translate(-50%, -50%) scale(1.1); 
-    box-shadow: 0 10px 30px rgba(0, 171, 228, 0.5); 
-    background-color: #FFFFFF;
-}
-
-/* Animace obsahu při otevření */
 .portfolio-item-content {
-    transition: transform 0.3s ease;
-}
-.portfolio-item.open .portfolio-item-content {
-    transform: scale(0.9);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
 /* ---------------------------------------------------- */
-/* 3. NADPISY A KRÁTKÝ POPIS                            */
+/* 3. NADPISY A POPIS                                   */
 /* ---------------------------------------------------- */
+
 h3 {
     font-size: 1.6rem;
     color: #00ABE4;
@@ -134,119 +160,201 @@ h3 {
     font-size: 1.1rem;
     color: #666;
     margin-bottom: 1.5rem;
-    line-height: 1.5; 
-    transition: opacity 0.3s ease; /* Smooth transition for hiding */
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
-.portfolio-item.open .short-description {
-    opacity: 0; /* Fade out effect */
-    pointer-events: none; /* Disable interaction while hidden */
-    height: 0; /* Ensure it takes no vertical space */
-    overflow: hidden; /* Prevent content from spilling out */
-    margin: 0; /* Remove any margin space */
-    display: none; /* Completely hide it */
-}
+/* ---------------------------------------------------- */
+/* 4. TECHNOLOGIE - BULLET POINTY                       */
+/* ---------------------------------------------------- */
 
-/* Odrážky s technologiemi */
 .short-description-points {
-    display: flex; /* Arrange list items in a row */
-    flex-wrap: wrap; /* Pokud je technologií moc, zalomí se na další řádek */
-    gap: 10px; /* Add spacing between items */
-    list-style: none; /* Remove default bullet points */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
     padding: 0;
-    margin-top: 1.5rem;
+    margin-top: auto;
+    padding-top: 1.5rem;
 }
 
 .short-description-points li {
     position: relative;
-    padding-left: 15px; /* Space for custom dot */
-    color: #666; /* Blue color for text */
-    font-size: 0.9em; /* Adjust size for a clean look */
+    padding-left: 15px;
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.5;
 }
 
 .short-description-points li::before {
-    content: "•"; /* Custom dot */
+    content: "•";
     position: absolute;
-    left: 0; /* Position the dot on the left */
-    color: #666; /* Blue color for the dot */
-    font-size: 1.2em; /* Slightly larger dot */
-    line-height: 1; /* Center align the dot */
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 1.2em;
 }
 
 /* ---------------------------------------------------- */
-/* 4. EXPANDOVANÝ OBSAH A DEEP SELEKTORY PRO SLOTY      */
+/* 5. MODAL OVERLAY                                     */
 /* ---------------------------------------------------- */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+/* ---------------------------------------------------- */
+/* 6. MODAL OKNO                                        */
+/* ---------------------------------------------------- */
+
+.modal-window {
+    position: relative;
+    width: 85vw;
+    height: 83vh;
+    max-width: 1000px;
+    background: white;
+    border-radius: 16px;
+    padding: 5rem;
+    overflow: hidden;
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.35);
+    animation: modal-open 0.25s ease-out;
+}
+
+.modal-content {
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 1rem;
+}
+
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #00ABE4;
+}
+
+@keyframes modal-open {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+/* ---------------------------------------------------- */
+/* 7. ZAVÍRACÍ TLAČÍTKO                                 */
+/* ---------------------------------------------------- */
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    font-size: 2.5rem;
+    line-height: 1;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.2s ease;
+}
+
+.close-button:hover {
+    color: #00ABE4;
+}
+
+/* ---------------------------------------------------- */
+/* 8. EXPANDOVANÝ OBSAH SLOTU                           */
+/* ---------------------------------------------------- */
+
 .expanded-content {
     color: #333;
-    padding: 1rem 0;
+    padding: 1rem 0.5rem;
     font-size: 1.1rem;
     line-height: 1.6;
 }
 
-/* Zde přidej stylování pro odkaz ve slotu */
 :deep(.expanded-content a) {
-    color: #00ABE4; /* Tvoje primární modrá barva */
+    color: #00ABE4;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
-:deep(.expanded-content a:hover) {
-    text-decoration: underline;
-    color: #0089b5; /* Trochu tmavší odstín při najetí */
+:deep(.expanded-content img) {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 1.5rem auto;
 }
 
-/* Vue :deep() selektory - nutné, protože HTML ze slotu se vkládá zvenčí */
-:deep(.expanded-content p){
+:deep(.expanded-content a:hover) {
+    text-decoration: underline;
+    color: #0089b5;
+}
+
+:deep(.expanded-content p) {
     color: #333;
     text-align: left;
     margin-bottom: 1.5em;
 }
 
 /* ---------------------------------------------------- */
-/* 5. RESPONZIVITA (MOBILNÍ ZAŘÍZENÍ)                   */
+/* 9. MOBILNÍ VERZE                                     */
 /* ---------------------------------------------------- */
+
 @media (max-width: 768px) {
     .portfolio-item {
-        padding: 1rem; /* Less padding for smaller space */
-        transform: none; /* Remove hover lift effect for smaller screens */
-        box-shadow: 0 4px 10px rgba(0, 171, 228, 0.1); /* Softer shadow */
-        max-width: 100%; /* Use full width of the container */
-        display: block; /* Stack the items vertically */
-        margin-bottom: 1rem; /* Add space between items */
+        padding: 1rem;
+        margin-bottom: 1rem;
+
     }
 
     .portfolio-item:hover {
-        transform: none; /* Disable hover effects */
-        box-shadow: 0 8px 20px rgba(0, 171, 228, 0.2); /* Softer shadow */
-    }
-
-    .portfolio-item.open {
-        position: fixed; /* Fixed position so it takes up full screen */
-        transform: translate(-50%, -50%); /* Ensure it’s centered */
-        max-width: 95%; /* Adjust the max-width */
-        max-height: 90vh; /* Adjust the max-height */
-        overflow-y: auto; /* Allow scrolling if content exceeds */
-        padding: 1.5rem; /* Add padding around content */
-        width: 100%;
-        /* Odstraněn ten obří záporný margin, fixed positioning to řeší spolehlivě */
+        transform: none;
     }
 
     .short-description {
-        font-size: 0.9rem; /* Adjusted font size for readability */
+        font-size: 0.9rem;
     }
 
     .short-description-points {
-        flex-direction: column; /* Stack points vertically */
-        gap: 5px; /* Reduce spacing between points */
+        flex-direction: column;
+        gap: 5px;
     }
 
     h3 {
-        font-size: 1.4rem; /* Slightly smaller headings */
+        font-size: 1.4rem;
+    }
+
+    .modal-window {
+        width: 90vw;
+        height: 85vh;
+        padding: 1.5rem;
     }
 
     .expanded-content {
-        font-size: 1rem; /* Adjust font size */
+        font-size: 1rem;
     }
 }
 </style>

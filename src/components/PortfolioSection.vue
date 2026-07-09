@@ -51,30 +51,39 @@ const projects = [
 </template>
 
 <style scoped>
-    /* Obal celé sekce Portfolio */
     .portfolio {
         background: #E9F1FA;
         padding: 3rem 1.5rem; 
-        scroll-margin-top: 40px; /* Aby to navbar nepřekrýval při scrollování */
+        scroll-margin-top: 40px;
     }
 
-    /* Nadpis sekce */
     .portfolio h2 {
         text-align: center; 
         font-size: 2rem; 
         color: #333; 
-        margin-bottom: 1rem; 
+        margin-bottom: 2rem; 
     }
 
-    /* Náš nový Grid, který nahradil starou HTML tabulku */
+    .container {
+        margin: 0 auto;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+
     .portfolio-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
         width: 100%;
+        align-items: start;
     }
 
-    /* Responzivita pouze pro tento obal */
+    @media (max-width: 992px) {
+        .portfolio-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
     @media (max-width: 768px) {
         .portfolio {
             padding: 2rem 1rem; 
@@ -82,10 +91,12 @@ const projects = [
 
         .portfolio h2 {
             font-size: 1.8rem; 
+            margin-bottom: 1.5rem;
         }
         
         .portfolio-grid {
-            gap: 1rem; /* Na mobilu dáme projekty blíž k sobě */
+            grid-template-columns: 1fr;
+            gap: 1rem; 
         }
     }
 </style>
