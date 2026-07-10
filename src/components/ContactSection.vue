@@ -1,25 +1,14 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 
-import emailIcon from '@/assets/email-icon.png'
-import phoneIcon from '@/assets/phone-icon.png'
-import linkedinIcon from '@/assets/linkedin-icon.png'
+import emailIcon from '../assets/email-icon.png'
+import phoneIcon from '../assets/phone-icon.png'
+import linkedinIcon from '../assets/linkedin-icon.png'
 
 const { t } = useI18n()
 </script>
 
 <template>
-  <div
-    style="
-      height: 500px;
-      background: red;
-      color: white;
-      font-size: 50px;
-    "
-  >
-    CONTACT TEST
-  </div>
-
   <footer id="contact" class="footer">
     <div class="container">
       <div class="contact-wrapper">
