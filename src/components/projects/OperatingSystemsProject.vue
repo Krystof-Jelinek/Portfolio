@@ -17,9 +17,10 @@ const { t } = useI18n();
 
     <p>
       {{ t('os.osProjectsLong4') }}
+      <br>
       <a href="https://github.com/Krystof-Jelinek/OperationalSystems" target="_blank" rel="noopener noreferrer">
         GitHub repository
-      </a>.
+      </a>
     </p>
   </ProjectCard>
 </template>

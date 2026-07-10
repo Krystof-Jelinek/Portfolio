@@ -24,6 +24,7 @@ const { t } = useI18n();
         Backend GitHub Repository
       </a>
       <br>
+      <br>
       <a href="https://github.com/Krystof-Jelinek/Spring-Boot-klient" target="_blank">
         Frontend GitHub Repository
       </a>

@@ -1,5 +1,8 @@
 <script setup lang="ts">
   import AboutSection from './components/AboutSection.vue';
+import ContactSection from './components/ContactSection.vue';
+import CopyrightSection from './components/CopyrightSection.vue';
+import CVSection from './components/CVSection.vue';
   import HeroSection from './components/HeroSection.vue';
   import Navbar from './components/Navbar.vue';
   import PortfolioSection from './components/PortfolioSection.vue';
@@ -10,19 +13,12 @@
   <HeroSection></HeroSection>
   <AboutSection></AboutSection>
   <PortfolioSection></PortfolioSection>
-
-  
-  <div class="tmp-content">
-    TEMP CONTENT
-  </div>
-
+  <CVSection></CVSection>
+  <ContactSection></ContactSection>
+  <CopyrightSection></CopyrightSection>
 
 </template>
 
 <style scoped>
-  
-  .tmp-content {
-    height: 3000px;
-  }
 
 </style>

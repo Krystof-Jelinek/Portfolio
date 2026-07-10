@@ -44,6 +44,12 @@ import ExcelEngineCz from './cz/projects/ExcelEngine'
 import OperatingSystemsEn from './en/projects/OperatingSystems'
 import OperatingSystemsCz from './cz/projects/OperatingSystems'
 
+import CVSectionEn from './en/cv'
+import CVSectionCz from './cz/cv'
+
+import ContactSectionEn from './en/contact'
+import ContactSectionCz from './cz/contact'
+
 const messages = {
   en: {
     navbar: navbarEn,
@@ -61,6 +67,8 @@ const messages = {
     kom: ConceptualModelingEn,
     excel: ExcelEngineEn,
     os: OperatingSystemsEn,
+    cv: CVSectionEn,
+    contact: ContactSectionEn,
   },
   cz: {
     navbar: navbarCz,
@@ -78,6 +86,8 @@ const messages = {
     kom: ConceptualModelingCz,
     excel: ExcelEngineCz,
     os: OperatingSystemsCz,
+    cv: CVSectionCz,
+    contact: ContactSectionCz,
   },
 }
 
