@@ -90,7 +90,7 @@ const { t } = useI18n()
   margin: 0 auto;
 }
 
-/*.contact-wrapper {
+.contact-wrapper {
   background: #F8FBFF;
   border-radius: 15px;
   padding: 3rem;
@@ -100,12 +100,7 @@ const { t } = useI18n()
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-}*/
-
-.contact-wrapper {
-  background: yellow;
 }
-
 
 .contact-wrapper h2 {
   font-size: 2.5rem;
@@ -117,21 +112,16 @@ const { t } = useI18n()
   text-align: center;
 }
 
-/*.contact-grid {
+.contact-grid {
   width: 100%;
 
   display: flex;
   justify-content: space-between;
   gap: 2rem;
-}*/
-
-.contact-grid {
-  background: lime;
 }
 
 .contact-card {
-  /*flex: 1;*/
-  display: block;
+  flex: 1;
 
   background: white;
 
