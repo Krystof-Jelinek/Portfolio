@@ -9,6 +9,17 @@ const { t } = useI18n()
 </script>
 
 <template>
+  <div
+    style="
+      height: 500px;
+      background: red;
+      color: white;
+      font-size: 50px;
+    "
+  >
+    CONTACT TEST
+  </div>
+
   <footer id="contact" class="footer">
     <div class="container">
       <div class="contact-wrapper">
