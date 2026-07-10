@@ -4,7 +4,7 @@ import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 
 // Pokud máš PDF ve složce public/, používá se cesta od rootu:
-const cvFile = '/Krystof-Jelinek-zivotopis.pdf'
+const cvFile = `${import.meta.env.BASE_URL}Krystof-Jelinek-zivotopis.pdf`
 </script>
 
 <template>
