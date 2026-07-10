@@ -3,6 +3,7 @@ import { useI18n } from 'vue-i18n';
 import ProjectCard from '../ProjectCard.vue';
 
 const { t } = useI18n();
+const pdfLink = `${import.meta.env.BASE_URL}bi-kom_jelinkry_semestralka.pdf`
 </script>
 
 <template>
@@ -18,7 +19,7 @@ const { t } = useI18n();
     
     <p>{{ t('kom.komLong5') }}</p>
     
-    <a href="/bi-kom_jelinkry_semestralka.pdf" target="_blank">
+    <a :href="pdfLink" target="_blank">
       {{ t('kom.viewProjectLink') }}
     </a>
   </ProjectCard>
