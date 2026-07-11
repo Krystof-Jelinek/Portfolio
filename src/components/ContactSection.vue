@@ -36,7 +36,7 @@ const { t } = useI18n()
             <p>krys.jelinek@seznam.cz</p>
           </a>
 
-          <a  href="tel:+420777737241"3  class="contact-card"4>
+          <a  href="tel:+420777737241"  class="contact-card">
             <img
               :src="phoneIcon"
               alt="Phone"
