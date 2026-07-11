@@ -40,7 +40,7 @@ const { t } = useI18n()
         justify-content: center;
         align-items: center;
 
-        padding: 0 1rem;
+        padding: 3rem 1rem;
 
         background: #E9F1FA;
 
@@ -52,11 +52,10 @@ const { t } = useI18n()
     .container {
         width: 100%;
         max-width: 1200px;
-
-        
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1 rem;
 
     }
 

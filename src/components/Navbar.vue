@@ -119,7 +119,7 @@
         margin-right: 1rem;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
 
     .navbar {
         padding: 1rem;
