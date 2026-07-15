@@ -13,6 +13,7 @@ import AIProjects from './projects/AIProjects.vue';
 import ConceptualModelingProject from './projects/ConceptualModelingProject.vue';
 import ExcelEngineProject from './projects/ExcelEngineProject.vue';
 import OperatingSystemsProject from './projects/OperatingSystemsProject.vue';
+import BachelorThesisProject from './projects/BachelorThesisProject.vue';
 
 const { t } = useI18n();
 
@@ -21,6 +22,7 @@ const { t } = useI18n();
 const projects = [
   AkrmatProject,
   WebAutomation,
+  BachelorThesisProject,
   AsciiArtProject,
   TetrisProject,
   CarRentProject,

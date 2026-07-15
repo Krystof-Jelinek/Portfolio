@@ -50,6 +50,9 @@ import CVSectionCz from './cz/cv'
 import ContactSectionEn from './en/contact'
 import ContactSectionCz from './cz/contact'
 
+import BachelorThesisEn from './en/projects/Thesis'
+import BachelorThesisCz from './cz/projects/Thesis'
+
 const messages = {
   en: {
     navbar: navbarEn,
@@ -69,6 +72,7 @@ const messages = {
     os: OperatingSystemsEn,
     cv: CVSectionEn,
     contact: ContactSectionEn,
+    thesis: BachelorThesisEn,
   },
   cz: {
     navbar: navbarCz,
@@ -88,6 +92,7 @@ const messages = {
     os: OperatingSystemsCz,
     cv: CVSectionCz,
     contact: ContactSectionCz,
+    thesis: BachelorThesisCz,
   },
 }
 

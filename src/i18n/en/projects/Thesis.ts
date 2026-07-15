@@ -1,0 +1,11 @@
+export default {
+    "short": "Bachelor thesis focused on expanding and refactoring the Akrmat information system, a production-grade application for academic accreditation management at FIT CTU.",
+    "long1": "This project, developed as my bachelor thesis, involved contributing to the next generation of the Akrmat system. The application automates the preparation of accreditation materials for the Faculty of Information Technology at CTU in Prague and is actively used in production. Working on this project required collaborating with other developers and faculty users to ensure the system meets real-world academic standards.",
+    "long2": "I successfully onboarded onto a large, existing distributed codebase and delivered critical missing functionality. Specifically, I designed and implemented a flexible management system for previously unsupported accreditation forms (A-I, B-I, C-II to C-V, D-I, and E) by enabling direct manipulation of LaTeX source code within a secure, isolated environment.",
+    "long3": "A major part of my contribution was addressing technical debt in the Java-based typesetting microservice. I performed extensive refactoring and modularization, resolving critical production issues such as race conditions during concurrent requests by introducing UUID-based working directories, and stabilizing the multi-pass compilation pipeline.",
+    "long4": "Furthermore, I implemented an aggregated system for compiling teaching staff resources across entire study programs and created a new Markdown export layout for courses. The final solution enabled the automated generation of complete, formally correct accreditation documents without the need for manual post-processing.",
+    "long5": "If you are interested in exploring any part of the thesis, including the implementation details or source code, you can find all the relevant links below.",
+    "linksHeader": "Documents and References:",
+    "downloadPdf": "Download Bachelor Thesis (PDF)",
+    "dspaceLink": "View on CTU DSpace Repository"
+}
