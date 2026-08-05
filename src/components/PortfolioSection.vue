@@ -14,6 +14,7 @@ import ConceptualModelingProject from './projects/ConceptualModelingProject.vue'
 import ExcelEngineProject from './projects/ExcelEngineProject.vue';
 import OperatingSystemsProject from './projects/OperatingSystemsProject.vue';
 import BachelorThesisProject from './projects/BachelorThesisProject.vue';
+import Blynkr from './projects/Blynkr.vue';
 
 const { t } = useI18n();
 
@@ -22,9 +23,10 @@ const { t } = useI18n();
 const projects = [
   AkrmatProject,
   WebAutomation,
+  Blynkr,
   BachelorThesisProject,
-  AsciiArtProject,
   TetrisProject,
+  AsciiArtProject,
   CarRentProject,
   CollaborativeFilteringProject,
   AdvancedSqlProject,

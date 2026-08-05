@@ -53,6 +53,9 @@ import ContactSectionCz from './cz/contact'
 import BachelorThesisEn from './en/projects/Thesis'
 import BachelorThesisCz from './cz/projects/Thesis'
 
+import BlynkrEn from './en/projects/Blynkr'
+import BlynkrCz from './cz/projects/Blynkr'
+
 const messages = {
   en: {
     navbar: navbarEn,
@@ -73,6 +76,7 @@ const messages = {
     cv: CVSectionEn,
     contact: ContactSectionEn,
     thesis: BachelorThesisEn,
+    blynkr: BlynkrEn,
   },
   cz: {
     navbar: navbarCz,
@@ -93,6 +97,7 @@ const messages = {
     cv: CVSectionCz,
     contact: ContactSectionCz,
     thesis: BachelorThesisCz,
+    blynkr: BlynkrCz,
   },
 }
 
